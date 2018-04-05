@@ -1,0 +1,20 @@
+baseURL = "http://cloudevents.github.io/"
+languageCode = "en-us"
+title = "CloudEvents"
+theme = "hugo-theme-lean-launch-page"
+canonifyurls = true
+paginate = 3
+publishDir = "docs"
+
+googleAnalytics = ""
+
+[params]
+tagline = "A specification for describing event data in a common way"
+mailchimpURL = "//my-account.mailchimp.com/my-subscriber-url"
+icon = "cloudevents.png"
+
+# twitter = "https://twitter.com/MyNewProduct"
+# facebook = "https://facebook.com/MyNewProduct"
+# instagram = "https://instragram.com/MyNewProduct"
+# googleplus = "https://plus.google.com/+MyNewProduct"
+github = "https://github.com/cloudevents/spec"
