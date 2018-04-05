@@ -1,0 +1,35 @@
+language: go
+
+go:
+  - 1.10
+
+git:
+  depth: 10
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - SOURCE_DIR="public"
+    - BUILD_BRANCH="source"
+    - DEPLOY_BRANCH="master"
+
+install:
+  - sudo apt-get update
+  - sudo apt-get install hugo
+
+script:
+  - hugo
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: public
+  repo: https://github.com/cloudevents/cloudevents.github.io.git
+  target-branch: master
+  on:
+    branch: master
