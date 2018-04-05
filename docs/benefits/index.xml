@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Benefits on CloudEvents</title>
-    <link>http://barkerd427.github.io/cloudevents-org/benefits/</link>
+    <link>http://cloudevents.github.io/benefits/</link>
     <description>Recent content in Benefits on CloudEvents</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://barkerd427.github.io/cloudevents-org/benefits/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cloudevents.github.io/benefits/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Why?</title>
-      <link>http://barkerd427.github.io/cloudevents-org/benefits/why/</link>
+      <link>http://cloudevents.github.io/benefits/why/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://barkerd427.github.io/cloudevents-org/benefits/why/</guid>
+      <guid>http://cloudevents.github.io/benefits/why/</guid>
       <description>Events are everywhere. However, event publishers tend to describe events differently.
 The lack of a common way of describing events means developers must constantly re-learn how to receive events. This also limits the potential for libraries, tooling and infrastructure to aide the delivery of event data across environments, like SDKs, event routers or tracing systems. The portability and productivity we can achieve from event data is hindered overall.</description>
     </item>
     
     <item>
       <title>What?</title>
-      <link>http://barkerd427.github.io/cloudevents-org/benefits/what/</link>
+      <link>http://cloudevents.github.io/benefits/what/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://barkerd427.github.io/cloudevents-org/benefits/what/</guid>
+      <guid>http://cloudevents.github.io/benefits/what/</guid>
       <description>Enter CloudEvents, a specification for describing event data in a common way. CloudEvents seeks to ease event declaration and delivery across services, platforms and beyond!
 CloudEvents is a new effort and it&amp;rsquo;s still under active development. However, its working group has received a surprising amount of industry interest, ranging from major cloud providers to popular SaaS companies. Our end goal is to offer this specification to the Cloud Native Computing Foundation.</description>
     </item>
     
     <item>
       <title>Contribute?</title>
-      <link>http://barkerd427.github.io/cloudevents-org/benefits/contribute/</link>
+      <link>http://cloudevents.github.io/benefits/contribute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://barkerd427.github.io/cloudevents-org/benefits/contribute/</guid>
+      <guid>http://cloudevents.github.io/benefits/contribute/</guid>
       <description>This effort is organized via the CNCF&amp;rsquo;s Serverless Working Group and everyone is encouraged to join us. If you&amp;rsquo;re interested in contributing, please collaborate with us in the CloudEvents Github Repo, join our weekly call every Thursday at 9AM PT via Zoom, and review our Governance model to familiarize yourself with our process.</description>
     </item>
     

@@ -3,34 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://barkerd427.github.io/cloudevents-org/benefits/why/</loc>
+    <loc>http://cloudevents.github.io/benefits/why/</loc>
   </url>
   
   <url>
-    <loc>http://barkerd427.github.io/cloudevents-org/benefits/what/</loc>
+    <loc>http://cloudevents.github.io/benefits/what/</loc>
   </url>
   
   <url>
-    <loc>http://barkerd427.github.io/cloudevents-org/benefits/contribute/</loc>
+    <loc>http://cloudevents.github.io/benefits/contribute/</loc>
   </url>
   
   <url>
-    <loc>http://barkerd427.github.io/cloudevents-org/benefits/</loc>
+    <loc>http://cloudevents.github.io/benefits/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://barkerd427.github.io/cloudevents-org/categories/</loc>
+    <loc>http://cloudevents.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://barkerd427.github.io/cloudevents-org/</loc>
+    <loc>http://cloudevents.github.io/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://barkerd427.github.io/cloudevents-org/tags/</loc>
+    <loc>http://cloudevents.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
