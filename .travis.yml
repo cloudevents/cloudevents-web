@@ -1,7 +1,7 @@
 language: go
 
 go:
-  - 1.10
+  - "1.10"
 
 git:
   depth: 10
@@ -10,15 +10,8 @@ branches:
   only:
     - master
 
-env:
-  global:
-    - SOURCE_DIR="public"
-    - BUILD_BRANCH="source"
-    - DEPLOY_BRANCH="master"
-
 install:
-  - sudo apt-get update
-  - sudo apt-get install hugo
+  - snap install hugo
 
 script:
   - hugo
