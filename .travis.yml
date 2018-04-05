@@ -20,12 +20,6 @@ install:
 
 script:
   - /snap/bin/hugo
-  - hugo
-  - /snap/bin/hugo version
-  - hugo version
-  - ls -al
-  - ls themes
-  - pwd
 
 deploy:
   provider: pages
