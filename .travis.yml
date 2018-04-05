@@ -21,6 +21,7 @@ install:
 script:
   - /snap/bin/hugo
   - ls -al
+  - ls themes
   - pwd
 
 deploy:
