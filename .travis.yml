@@ -10,11 +10,16 @@ branches:
   only:
     - master
 
+sudo: required
+
+dist: trusty
+
 install:
-  - snap install hugo
+  - sudo apt-get --yes install snapd
+  - sudo snap install hugo
 
 script:
-  - hugo
+  - /snap/bin/hugo
 
 deploy:
   provider: pages
