@@ -1,4 +1,4 @@
-baseURL = "http://cloudevents.github.io/"
+baseURL = "https://cloudevents.io"
 languageCode = "en-us"
 title = "CloudEvents"
 theme = "hugo-theme-lean-launch-page"
