@@ -1,4 +1,4 @@
-baseURL = "http://cloudevents.github.io/"
+baseURL = "https://cloudevents.io"
 languageCode = "en-us"
 title = "CloudEvents"
 theme = "hugo-theme-lean-launch-page"
@@ -9,7 +9,7 @@ googleAnalytics = ""
 
 [params]
 tagline = "A specification for describing event data in a common way"
-mailchimpURL = "//my-account.mailchimp.com/my-subscriber-url"
+# mailchimpURL = "//my-account.mailchimp.com/my-subscriber-url"
 icon = "cloudevents.png"
 
 # twitter = "https://twitter.com/MyNewProduct"
