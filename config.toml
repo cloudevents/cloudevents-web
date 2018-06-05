@@ -10,6 +10,8 @@ googleAnalytics = ""
 [params]
 tagline = "A specification for describing event data in a common way"
 # mailchimpURL = "//my-account.mailchimp.com/my-subscriber-url"
+groupsiourl = "https://lists.cncf.io/g/cncf-cloudevents/signup?u=2254653446843417778"
+groupsioid = "2254653446843417778"
 icon = "cloudevents.png"
 
 # twitter = "https://twitter.com/MyNewProduct"

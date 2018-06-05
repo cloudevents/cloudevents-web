@@ -31,6 +31,7 @@
 {{ end }}
 	<p>{{ .Site.Params.tagline }}</p>
 	{{ if isset .Site.Params "mailchimpurl" }}{{ partial "mailchimp-signup" . }}{{ end }}
+	{{ if isset .Site.Params "groupsiourl" }}{{ partial "groups-io" . }}{{ end }}
 	<div id="benefits">
 		{{ range where .Data.Pages "Section" "benefits" }}
 		<div>
