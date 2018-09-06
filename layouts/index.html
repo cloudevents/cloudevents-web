@@ -10,7 +10,7 @@
 {{ $directory := "static/" }}
 {{ $filename := "favicon.png" }}
 {{ if (where (readDir $directory) "Name" $filename) }}
-	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="icon" type="image/png" href="favicon.ico" />
 {{ end }}
 	<title>{{ .Site.Title }}</title>
 </head>
