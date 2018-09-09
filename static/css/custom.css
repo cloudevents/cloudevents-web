@@ -1,0 +1,5 @@
+body {
+    background-color: #f0f0f0;
+    color: rgba(16, 16, 16, 0.65);
+    background-image: url("images/overlay.png"), linear-gradient(45deg, #3eadf0 55%, #f0f0f0 85%);
+}

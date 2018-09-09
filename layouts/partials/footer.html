@@ -1,0 +1,49 @@
+<footer id="footer">
+
+        <section>
+          <h2>{{ .Site.Params.footer.title }}</h2>
+          <p>{{ .Site.Params.footer.description | markdownify }}</p>
+          <ul class="actions">
+            {{range $button := .Site.Params.footer.action }}
+              <li>
+                <a href="{{ $button.href }}" class="button {{ $button.customClass }}">{{ $button.buttontext }}</a>
+              </li>
+            {{ end }}
+          </ul>  
+        </section>
+        
+        <section>
+            {{ if .Site.Params.footer.second_title }}
+            <h2>{{ .Site.Params.footer.second_title }}</h2>
+            <dl class="alt">
+              {{ with .Site.Params.footer.address }}
+                <dt>Address</dt>
+                <dd>{{ . | markdownify }}</dd>
+              {{ end }}
+              {{ with .Site.Params.footer.phone }}
+                <dt>Phone</dt>
+                <dd>{{ . | markdownify }}</dd>
+              {{ end }}
+              {{ with .Site.Params.footer.email }}
+              <dt>Email</dt>
+              <dd><a href="mailto:{{.Site.Params.footer.email}}">{{.Site.Params.footer.email | markdownify }}</a></dd>
+              {{ end }}
+            </dl>            
+            {{ end }}
+
+            {{ if isset .Site.Params "groupsiourl" }}{{ partial "groups-io" . }}{{ end }}
+
+            {{ if .Site.Params.footer.social_list.enable }}
+              <ul class="icons">
+                {{ range .Site.Params.footer.social }}
+                  <li><a href="{{ .link }}" class="icon alt {{ .icon }}"><span class="label">{{ .title }}</span></a></li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </section>
+          
+          {{ if .Site.Params.footer.copyright.enable }}
+            <p class="copyright">{{.Site.Params.footer.copyright.text | markdownify }}</a></p>      
+          {{ end }}
+        
+      </footer>
