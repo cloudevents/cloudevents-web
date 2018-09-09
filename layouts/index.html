@@ -1,44 +1,119 @@
-<!doctype html>
+<!DOCTYPE HTML>
+{{ "<!--" | safeHTML}}
+  Stellar by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+{{ "-->" | safeHTML }}
 <html>
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="/assets/main.css" />
-	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
-	{{ template "_internal/google_analytics.html" . }}
-{{ $directory := "static/" }}
-{{ $filename := "favicon.png" }}
-{{ if (where (readDir $directory) "Name" $filename) }}
-	<link rel="icon" type="image/png" href="favicon.ico" />
-{{ end }}
-	<title>{{ .Site.Title }}</title>
-</head>
-<body>
-	<ul class="social-icons">
-		{{ if isset .Site.Params "twitter" }}<li><a href="{{ .Site.Params.twitter }}"><i class="fa fa-twitter"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "facebook" }}<li><a href="{{ .Site.Params.facebook }}"><i class="fa fa-facebook"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "instagram" }}<li><a href="{{ .Site.Params.instagram }}"><i class="fa fa-instagram"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "googleplus" }}<li><a href="{{ .Site.Params.googleplus }}"><i class="fa fa-google-plus"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "github" }}<li><a href="{{ .Site.Params.github }}"><i class="fa fa-github"></i></a></li>{{ end }}
-	</ul>
-	{{ block "main" . }}
-	{{ end }}
-{{ $directory := "static/img" }}
-{{ $filename := .Site.Params.icon }}
-{{ if (where (readDir $directory) "Name" $filename) }}
-	<img src="img/{{.Site.Params.icon}}" alt="Logo" style="width: 100%; height: auto;"/>
-{{ end }}
-	<p>{{ .Site.Params.tagline }}</p>
-	{{ if isset .Site.Params "mailchimpurl" }}{{ partial "mailchimp-signup" . }}{{ end }}
-	{{ if isset .Site.Params "groupsiourl" }}{{ partial "groups-io" . }}{{ end }}
-	<div id="benefits">
-		{{ range where .Data.Pages "Section" "benefits" }}
-		<div>
-			<h2><i class="fa {{ .Params.icon }}"></i>{{ .Title }}</h2>
-			{{ .Content }}
-		</div>
-		{{ end }}
-	</div>
-</body>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+
+    <!-- Wrapper -->
+      <div id="wrapper">
+          {{ .Data.Posts }}
+
+        <!-- Header -->
+          {{ partial "header.html" . }}
+
+        <!-- Nav -->
+          {{ partial "navigation.html" . }}
+
+        <!-- Main -->
+          <div id="main">
+
+            <!-- Introduction -->
+            {{ if .Params.intro }}
+              {{ partial "intro.html" . }}
+            {{ end }}
+
+            <!-- Sections -->
+<!--
+              {{ range where .Data.Pages "Section" "benefits" }}
+              {{ printf "%#v" . }}
+              <section id="{{ .Params.id }}" class="main special">
+                  <header class="major">
+                    <h2>
+                      {{ if .Params.icon }}
+                      <i class="fa {{ .Params.icon }}"></i> 
+                      {{ end }}
+                      {{ if .Params.title }}
+                      {{ .Params.title }} TITLE
+                      {{ end }}
+                    </h2>
+                    {{ if .Params.description }}
+                    <p>{{ .Params.description | markdownify }}</p>
+                    {{ end }}
+                  </header>
+                  {{ if .Content }}
+                  <p class="content">{{ .Content | markdownify }}</p>
+                  {{ end }}
+              </section>
+              {{ end }}
+            -->
+              {{ $list := .Site.Params.section }}
+              {{ range $index, $section := $list }}
+                <section id="{{$section.id}}" class="main special">
+                  <header class="major">
+                    <h2>{{ $section.title }}</h2>
+                    <p>{{ $section.description | markdownify }}</p>
+                  </header>
+                  
+                  <!-- section features -->
+                  {{ if $section.features.enable }}
+                    <ul class="features">
+                      {{ range $count, $feature := $section.feature }}
+                      <li>
+                        <span class="icon major style{{ add $count 1 }} {{ $feature.icon }}"></span>
+                        <h3>{{ $feature.title }} </h3>
+                        <p>{{ $feature.description | markdownify }}</p>
+                      </li>
+                      {{end}}
+                    </ul>
+                  {{ end }}
+
+                  <!-- section statistics -->
+                  {{ if $section.statistics.enable }}
+                    <ul class="statistics">
+                      {{ range $count, $stat := $section.statistic }}
+                        <li class="style{{add $count 1}}">
+                          <span class="icon {{ $stat.icon }} "></span>
+                          <strong>{{ $stat.value }}</strong> {{ $stat.text }}
+                        </li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+
+                  <!-- section content -->
+                  {{ if $section.content.enable }}
+                    <p class="content">{{ $section.content.text }}</p>
+                  {{ end }}
+                  
+                  <!-- section footer/cta -->
+                  {{ if $section.footer.enable }}
+                    <footer class="major">
+                      <ul class="actions">
+                        {{range $button := $section.footer.action }}
+                          <li>
+                            <a href="{{ $button.buttonUrl }}" class="button {{ $button.customClass }}">{{ $button.buttontext }}</a>
+                          </li>
+                        {{ end }}
+                      </ul>
+                    </footer>
+                  {{end}}
+                </section>
+              {{ end }}
+          
+          </div>
+
+        <!-- Footer -->
+          {{ partial "footer.html" . }}
+
+      </div>
+
+    <!-- Scripts -->
+      {{ partial "scripts.html" . }}
+      {{- partial "footer_custom.html" . }}
+  </body>
 </html>

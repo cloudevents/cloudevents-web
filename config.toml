@@ -1,21 +1,144 @@
-baseURL = "https://cloudevents.io"
+# Site settings
+baseurl = "//cloudevents.io"
 languageCode = "en-us"
 title = "CloudEvents"
-theme = "hugo-theme-lean-launch-page"
+theme = "hugo-stellar-theme"
 canonifyurls = true
-paginate = 3
-
 googleAnalytics = ""
 
 [params]
-tagline = "A specification for describing event data in a common way"
-# mailchimpURL = "//my-account.mailchimp.com/my-subscriber-url"
 groupsiourl = "https://lists.cncf.io/g/cncf-cloudevents/signup?u=2254653446843417778"
 groupsioid = "2254653446843417778"
-icon = "cloudevents.png"
-
-# twitter = "https://twitter.com/MyNewProduct"
-# facebook = "https://facebook.com/MyNewProduct"
-# instagram = "https://instragram.com/MyNewProduct"
-# googleplus = "https://plus.google.com/+MyNewProduct"
 github = "https://github.com/cloudevents/spec"
+
+  [params.header]
+    title = ""
+    description = "A specification for describing event data in a common way"
+    image = "img/cloudevents.png"
+
+  [[params.navigation]]
+    name = "Why?"
+    href = "#why"
+
+  [[params.navigation]]
+    name = "What?"
+    href = "#what"
+
+  [[params.navigation]]
+    name = "Contribute"
+    href = "#contribute"
+
+  # [params.intro]
+  #   title = "Why?"
+  #   description = "Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam."
+  #   image = "images/pic01.jpg"
+  #   [[params.intro.action]]
+  #     buttontext = "Learn More"
+  #     href = "generic.html"
+
+
+  [[params.section]]
+    id = "why"
+    title = "Why?"
+    description = "Events are everywhere.  However, event publishers tend to describe events differently."
+    
+    # the picture is storead at static/images/
+    [params.section.features]
+      enable = true
+      [[params.section.feature]]
+        title = "Consistency"
+        description = "The lack of a common way of describing events means developers must constantly re-learn how to receive events."
+        icon = "fa-code"
+
+      [[params.section.feature]]
+        title = "Accessibility"
+        description = "This also limits the potential for libraries, tooling and infrastructure to aide the delivery of event data across environments, like SDKs, event routers or tracing systems."
+        icon = "fa-copy"
+
+      [[params.section.feature]]
+        title = "Portability"
+        description = "The portability and productivity we can achieve from event data is hindered overall."
+        icon = "fa-diamond"
+    [params.section.footer]
+      enable = false
+      [[params.section.footer.action]]
+        buttontext = "Learn More"
+        buttonUrl = "generic.html"
+
+  [[params.section]]
+    id = "what"
+    title = "What?"
+    description = "Enter CloudEvents, a specification for describing event data in a common way. CloudEvents seeks to ease event declaration and delivery across services, platforms and beyond!\n\nCloudEvents is a new effort and it's still under active development.  However, its working group has received a surprising amount of industry interest, ranging from major cloud providers to popular SaaS companies.  Our end goal is to offer this specification to the [Cloud Native Computing Foundation](https://serverless.us11.list-manage.com/pages/track/click?u=b4fad36768cab222f88338995&id=59a5aec830)."
+
+    [params.section.statistics]
+      enable = false
+      [[params.section.statistic]]
+        icon = "fa-code-fork"
+        value = "5,120"
+        text = "Etiam"
+      [[params.section.statistic]]
+        icon = "fa-folder-open-o"
+        value = "8,192"
+        text = "Magna"
+      [[params.section.statistic]]
+        icon = "fa-signal"
+        value = "2,048"
+        text = "Tempus"
+      [[params.section.statistic]]
+        icon = "fa-laptop"
+        value = "4,096"
+        text = "Aliquam"
+      [[params.section.statistic]]
+        icon = "fa-diamond"
+        value = "1,024"
+        text = "Nullam"
+
+    [params.section.content]
+      enable = false
+      text = "Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia."
+
+    [params.section.footer]
+      enable = true
+      [[params.section.footer.action]]
+        buttontext = "Cloud Native Computing Foundation"
+        buttonUrl = "https://serverless.us11.list-manage.com/pages/track/click?u=b4fad36768cab222f88338995&id=59a5aec830"
+
+
+  [[params.section]]
+    id = "contribute"
+    title = "Contribute!"
+    description = "This effort is organized via the CNCF's [Serverless Working Group](https://github.com/cncf/wg-serverless) and everyone is encouraged to join us.  If you're interested in contributing, please collaborate with us in the [CloudEvents Github Repo](https://github.com/cloudevents/spec), join our weekly call every Thursday at 9AM PT via [Zoom](https://zoom.us/my/cncfserverlesswg), and review our [Governance](https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md) model to familiarize yourself with our process."
+    [params.section.footer]
+      enable = true
+      [[params.section.footer.action]]
+        buttontext = "Serverless Working Group"
+        buttonUrl = "https://github.com/cncf/wg-serverless"
+      [[params.section.footer.action]]
+        buttontext = "CloudEvents Github Repo"
+        buttonUrl = "https://github.com/cloudevents/spec"
+      [[params.section.footer.action]]
+        buttontext = "Governance"
+        buttonUrl = "https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md"
+
+  [params.footer]
+    enable = true
+    title = "CloudEvents"
+    description = "A specification for describing event data in a common way."
+
+    [[params.footer.action]]
+      href = "generic.html"
+      buttontext = "Learn More"
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Github"
+        icon = "fa-github"
+        link = "https://github.com/cloudevents/spec"
+
+    # copyright
+    [params.footer.copyright]
+      enable = true
+      text = "© CloudEvents.io 2018"
