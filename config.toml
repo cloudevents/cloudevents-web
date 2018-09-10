@@ -126,7 +126,7 @@ github = "https://github.com/cloudevents/spec"
     description = "A specification for describing event data in a common way."
 
     [[params.footer.action]]
-      href = "generic.html"
+      href = "https://github.com/cloudevents/spec"
       buttontext = "Learn More"
 
     # social icons
