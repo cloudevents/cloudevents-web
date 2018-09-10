@@ -107,15 +107,15 @@ github = "https://github.com/cloudevents/spec"
   [[params.section]]
     id = "contribute"
     title = "Contribute!"
-    description = "This effort is organized via the CNCF's [Serverless Working Group](https://github.com/cncf/wg-serverless) and everyone is encouraged to join us.  If you're interested in contributing, please collaborate with us in the [CloudEvents Github Repo](https://github.com/cloudevents/spec), join our weekly call every Thursday at 9AM PT via [Zoom](https://zoom.us/my/cncfserverlesswg), and review our [Governance](https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md) model to familiarize yourself with our process."
+    description = "This effort is organized via the CNCF's [Serverless Working Group](https://github.com/cncf/wg-serverless) and everyone is encouraged to join us.  If you're interested in contributing, please collaborate with us in the [CloudEvents Github Org](https://github.com/cloudevents), join our weekly call every Thursday at 9AM PT via [Zoom](https://zoom.us/my/cncfserverlesswg), and review our [Governance](https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md) model to familiarize yourself with our process."
     [params.section.footer]
       enable = true
       [[params.section.footer.action]]
         buttontext = "Serverless Working Group"
         buttonUrl = "https://github.com/cncf/wg-serverless"
       [[params.section.footer.action]]
-        buttontext = "CloudEvents Github Repo"
-        buttonUrl = "https://github.com/cloudevents/spec"
+        buttontext = "CloudEvents Github Org"
+        buttonUrl = "https://github.com/cloudevents"
       [[params.section.footer.action]]
         buttontext = "Governance"
         buttonUrl = "https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md"
