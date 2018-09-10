@@ -1,3 +1,3 @@
-[submodule "themes/hugo-theme-lean-launch-page"]
-	path = themes/hugo-theme-lean-launch-page
-	url = https://github.com/felicianotech/hugo-theme-lean-launch-page
+[submodule "themes/hugo-stellar-theme"]
+	path = themes/hugo-stellar-theme
+	url = https://github.com/antonpolishko/hugo-stellar-theme
