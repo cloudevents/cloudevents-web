@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "//cloudevents.io"
+baseurl = "https://cloudevents.io/"
 languageCode = "en-us"
 title = "CloudEvents"
 theme = "hugo-stellar-theme"
