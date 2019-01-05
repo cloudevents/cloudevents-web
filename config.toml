@@ -28,6 +28,10 @@ github = "https://github.com/cloudevents/spec"
     name = "Contribute"
     href = "#contribute"
 
+  [[params.navigation]]
+    name = "v0.2 Announcement"
+    href = "#v02"
+
   # [params.intro]
   #   title = "Why?"
   #   description = "Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam."
@@ -119,6 +123,28 @@ github = "https://github.com/cloudevents/spec"
       [[params.section.footer.action]]
         buttontext = "Governance"
         buttonUrl = "https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md"
+
+  [[params.section]]
+    id = "v02"
+    title = "v0.2 Announcement!"
+    description = """# CloudEvents 0.2 Release
+
+In May, the CNCF [announced](https://www.cncf.io/blog/2018/05/22/cloudevents-in-the-sandbox/) that the open source specification CloudEvents was accepted into the CNCF Sandbox. Since then the working group has made a ton of progress outlining how events should be abstracted and made interoperable in the ecosystem, allowing communication between different parts of the stack, as well as disparate programming languages.
+
+Today, the CloudEvents team is excited to announce the 0.2 release of the specification, which includes many new details, as well as the SDK specification. Here we will cover the highlights of the new release, but for more information see the [0.2 spec](https://github.com/cloudevents/spec). 
+
+Some of the major new updates to the spec are various transport mappings and bindings, specifically for [AMQP 1.0](https://github.com/cloudevents/spec/blob/master/amqp-transport-binding.md), [MQTT 3.1.1 and 5.0](https://github.com/cloudevents/spec/blob/master/mqtt-transport-binding.md), and [NATS](https://github.com/cloudevents/spec/blob/master/nats-transport-binding.md). This creates a new layer of abstraction to allow developers to connect to any of the major transport messagings protocols and conform to the events translation standard that this spec defines, allowing more flexibility.
+
+Another major addition in the 0.2 spec is the support for protobuf, or [Protocol Buffers](https://developers.google.com/protocol-buffers/), Google's language-neutral, platform-neutral, extensible way of serializing structured data for use in communications protocols, data storage, and other software development scenarios. For more information around the protobuf support in 0.2 see the [protobuf format](https://github.com/cloudevents/spec/blob/master/protobuf-format.md).
+
+The CloudEvents team has defined several SDKs already, including [Go](https://github.com/cloudevents/sdk-go), [Java](https://github.com/cloudevents/sdk-java), [Python](https://github.com/cloudevents/sdk-python), [C#](https://github.com/cloudevents/sdk-csharp), and [JavaScript](https://github.com/cloudevents/sdk-javascript), but there are many other languages and the new [CloudEvents SDK](https://github.com/cloudevents/spec/blob/master/SDK.md) spec outlines the minimum set of requirements for new SDKs to be added and supported by the team. If you're interested in contributing to this effort, see the SDK guidelines and get started today to become a contributor or maintainer.
+
+If you're interested but not sure where exactly to get started, or how this would fit into your projects, the 0.2 release features the [CloudEvents Primer](https://github.com/cloudevents/spec/blob/master/primer.md) that will explain the concepts and drivers behind this effort, as well as how to get started. Also the [Roadmap](https://github.com/cloudevents/spec/blob/master/roadmap.md) is a great way to understand the next phases of this Sandbox effort and where the spec is headed, for those who are looking to leverage this work or want to get involved and contribute.
+
+TOC sponsors of the project include Ken Owens and Brian Grant.
+
+The CNCF Sandbox is a home for early stage projects, for further clarification around project maturity levels in CNCF, please visit our outlined [Graduation Criteria](https://www.cncf.io/projects/graduation-criteria/).
+"""
 
   [params.footer]
     enable = true
