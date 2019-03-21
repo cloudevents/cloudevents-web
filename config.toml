@@ -129,7 +129,7 @@ github = "https://github.com/cloudevents/spec"
     title = "v0.2 Announcement!"
     description = """# CloudEvents 0.2 Release
 
-In May, the CNCF [announced](https://www.cncf.io/blog/2018/05/22/cloudevents-in-the-sandbox/) that the open source specification CloudEvents was accepted into the CNCF Sandbox. Since then the working group has made a ton of progress outlining how events should be abstracted and made interoperable in the ecosystem, allowing communication between different parts of the stack, as well as disparate programming languages.
+In May 2018, the CNCF [announced](https://www.cncf.io/blog/2018/05/22/cloudevents-in-the-sandbox/) that the open source specification CloudEvents was accepted into the CNCF Sandbox. Since then the working group has made a ton of progress outlining how events should be abstracted and made interoperable in the ecosystem, allowing communication between different parts of the stack, as well as disparate programming languages.
 
 Today, the CloudEvents team is excited to announce the 0.2 release of the specification, which includes many new details, as well as the SDK specification. Here we will cover the highlights of the new release, but for more information see the [0.2 spec](https://github.com/cloudevents/spec). 
 
