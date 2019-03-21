@@ -131,7 +131,7 @@ github = "https://github.com/cloudevents/spec"
 
 In May 2018, the CNCF [announced](https://www.cncf.io/blog/2018/05/22/cloudevents-in-the-sandbox/) that the open source specification CloudEvents was accepted into the CNCF Sandbox. Since then the working group has made a ton of progress outlining how events should be abstracted and made interoperable in the ecosystem, allowing communication between different parts of the stack, as well as disparate programming languages.
 
-Today, the CloudEvents team is excited to announce the 0.2 release of the specification, which includes many new details, as well as the SDK specification. Here we will cover the highlights of the new release, but for more information see the [0.2 spec](https://github.com/cloudevents/spec). 
+On December 6th, 2018, the CloudEvents team announced the 0.2 release of the specification, which includes many new details, as well as the SDK specification. Here we will cover the highlights of the new release, but for more information see the [0.2 spec](https://github.com/cloudevents/spec). 
 
 Some of the major new updates to the spec are various transport mappings and bindings, specifically for [AMQP 1.0](https://github.com/cloudevents/spec/blob/master/amqp-transport-binding.md), [MQTT 3.1.1 and 5.0](https://github.com/cloudevents/spec/blob/master/mqtt-transport-binding.md), and [NATS](https://github.com/cloudevents/spec/blob/master/nats-transport-binding.md). This creates a new layer of abstraction to allow developers to connect to any of the major transport messagings protocols and conform to the events translation standard that this spec defines, allowing more flexibility.
 
