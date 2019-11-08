@@ -29,8 +29,8 @@ github = "https://github.com/cloudevents/spec"
     href = "#contribute"
 
   [[params.navigation]]
-    name = "v0.3 Announcement"
-    href = "#v03"
+    name = "v1.0 Announcement"
+    href = "#v10"
 
   # [params.intro]
   #   title = "Why?"
@@ -125,34 +125,20 @@ github = "https://github.com/cloudevents/spec"
         buttonUrl = "https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md"
 
   [[params.section]]
-    id = "v03"
-    title = "v0.3 Announcement!"
-    description = """# CloudEvents 0.3 Release
+    id = "v10"
+    title = "v1.0 Announcement!"
+    description = """# CloudEvents 1.0 Release
 
 <span style="text-align:left">
-On June 13 the CloudEvents project approved version 0.3 of the specification and accompanying documents. It's been about 6 months since the last release and there have been a lot of really good changes that have been made since then. However, before we get into the list of changes, let's first discuss what this release really means. While the version number appears very small, don't let that fool you. Our [roadmap](https://github.com/cloudevents/spec/blob/master/roadmap.md) only goes up to v0.5 and if you look at the list of work items for 0.4 and 0.5, most are related to clarifications or working on secondary documents, like additional protocol bindings. The point is that the group considers the 'core' part of the spec to be nearing completion - and that's huge!
+On October 24, 2019 the CloudEvents project had two significant achievements. First, the CNCF's Technical Oversight Committee approved the project as an "incubator" project, graduating from "sandbox". Second, the CloudEvents specification released version 1.0 of its deliverables! 
 
-While we expect stability as we reach v1.0, we don't know what will pop up during our testing and verification phase that we're planning on doing prior to v1.0. But it means that we consider the bigger design decisions to be behind us. We have agreed on the scope and goals of the specification, and we're just putting the final touches on things. As proof, as of this writing, we don't have any open PRs targeted for v1.0 and only 9 open issues.
+This is the first major release of the specification and represents two year's worth of hard work by a truly great team of people from across the entire serverless community. We've had just about every major cloud provider participate, several "end-user" companies as well as many individual participants all working diligently on producing a specification that will hopefully continue to see increased adoption now that this milestone has been reached.
 
-The current plan is to try to resolve these remaining issues within weeks and then determine how long we'll need for a final review and verification phase. We already have CloudEvents being used by several key Cloud players and open-source projects, so that already gives us a good feeling about its readiness.  Net: watch this space!
+Aside from the [core CloudEvents specification](https://github.com/cloudevents/spec/blob/v1.0/spec.md), there's also the [Primer](https://github.com/cloudevents/spec/blob/v1.0/primer.md) and protocol and format specifications (all of which can be found on the [github repo](https://github.com/cloudevents/spec). Additionally, there are 5 different [SDKs](https://github.com/cloudevents/spec#sdks) to help people produce and consume CloudEvents.
 
-Let's discuss some of the bigger changes in the specifications since v0.2:<br>
-- An SDK design doc was been provided to help guide SDK authors and to promote consistency (when appropriate) between the various language SDKs.<br>
-- We enabled support for batching of CloudEvents. It mainly becomes a transport issue, but we do describe how to do it for HTTP.<br>
-- The "contenttype" attribute has been renamed to "datacontenttype". While this might seem trivial, the potential confusion of this attribute with the Content-Type HTTP header was a sore point for many people.<br>
-- In the area of security, we added some guidance around how to manage sensitive data.<br>
-- In order to help promote interop, we mandated that CloudEvent components needs to support messages at of least 64k in size.<br>
-- A "subject" attribute was added. While "source" indicates where the event came from, "subject" indicates which resource the event is about.<br>
-- Added some processing rules around how to serialize the data types, in particular unknown extensions. In the end, they're just strings if the transport doesn't support a type system.<br>
-- Two new extensions were defined: "dataref" which can be used for a claim-check pattern of retrieval of large data, and "paritionkey" which helps consumers place the incoming event into the correct grouping mechanism for more efficient processing.<br>
-- A section for pointing to "proprietary" protocols that define a CloudEvents mapping was added. This allows for transports that are mainly focused on one particular implementation to still be included within the project. The first one to be added was a reference to the RocketMQ CloudEvents mapping.<br>
-- Clarified which properties are used for uniqueness checking, to enable de-dupe logic if necessary
+The CNCF Serverless Working Group will be deciding what to focus on next (e.g. additional CloudEvents related activities, or perhaps address some other interoperability pain-point the community is experiencing). So, if you're interested please join the regular [weekly calls](https://github.com/cloudevents/spec#meeting-time). Additionally, there is the work being done on the [workflow](https://github.com/cncf/wg-serverless/tree/master/workflow/spec) specification.
 
-Finally, the [SDK](https://github.com/cloudevents/spec#sdks) work is continuing nicely, so if you're interested in using CloudEvent those might be helpful in your coding efforts. And if you're interested in learning more about CloudEvents you should go to the [github repo](https://github.com/cloudevents/spec) and start by reading the [Primer](https://github.com/cloudevents/spec/blob/v0.3/primer.md). It provides a good overview of the project goals and design decisions. Then, of course, the [spec](https://github.com/cloudevents/spec/blob/v0.3/spec.md) itself is where you'll get all of the details you'll need about CloudEvents.
-
-TOC sponsors of the project include Ken Owens and Brian Grant.
-
-The CNCF Sandbox is a home for early stage projects, for further clarification around project maturity levels in CNCF, please visit our outlined [Graduation Criteria](https://www.cncf.io/projects/graduation-criteria/).
+Thanks and congratulations to everyone who participated in this work!
 </span>
 """
 
