@@ -1,0 +1,26 @@
+{{ $title         := site.Title }}
+{{ $description   := site.Params.description }}
+{{ $imageUrl      := printf "img/logos/%s" site.Params.logos.navbar | absURL }}
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="description" content="{{ $description }}" />
+
+<!-- OpenGraph metadata-->
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="en_US">
+<meta property="og:description" content="{{ $description }}">
+<meta name="og:type" content="website">
+<meta name="og:image" content="{{ $imageUrl }}">
+<meta name="og:image:alt" content="CloudEvents project logo">
+<meta name="og:image:type" content="image/png">
+
+
+<!-- Twitter Card metadata -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@CloudEventsIO">
+<meta name="twitter:creator" content="@CloudEventsIO">
+
+<link rel="canonical" content="{{ .Permalink }}">
+
+{{ hugo.Generator }}

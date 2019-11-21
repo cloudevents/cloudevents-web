@@ -1,0 +1,21 @@
+videos:
+- title: 'CNCF CloudEvents Project: A Step Towards Serverless Interop'
+  url: https://www.youtube.com/watch?v=a9ygYtCYYdg
+  speakers: Doug Davis, IBM
+  event: KubeCon China 2019
+- title: 'Intro: CNCF Serverless WG / CloudEvents'
+  url: https://www.youtube.com/watch?v=f2D1NUNxY0M&t=51s
+  speakers: Scott Nichols, Google and Klaus Deissner, SAP
+  event: KubeCon Europe 2019
+- title: 'Deep Dive: CNCF Serverless WG/CloudEvents'
+  url: https://www.youtube.com/watch?v=-3gOqR_TGEs
+  speakers: Clemens Vasters, Microsoft and Vlad Ionescu, Independent
+  event: KubeCon Europe 2019
+- title: 'Intro: CNCF Serverless WG / CloudEvents'
+  url: https://www.youtube.com/watch?v=iNlqLr9vlD4&t=1521s
+  speakers: Doug Davis, IBM & Cathy Zhang, Huawei
+  event: KubeCon North America 2018
+- title: 'The Serverless and Event-Driven Future'
+  url: https://www.youtube.com/watch?v=TZPPjAv12KU&t=914s
+  speakers: Austen Collins, Serverless
+  event: KubeCon Europe 2018

@@ -1,0 +1,44 @@
+{{ $why     := site.Params.why }}
+{{ $heading := $why.heading }}
+{{ $tiles   := $why.tiles }}
+<section class="section has-background-white-bis">
+  <div class="container">
+    <p class="title is-size-3 is-size-4-mobile has-text-weight-light is-spaced">
+      Why CloudEvents?
+    </p>
+
+    <hr class="thick" />
+
+    <p class="subtitle is-size-4 is-size-5-mobile has-text-weight-light">
+      {{ $heading }}
+    </p>
+
+    <br />
+    
+    <div class="columns">
+      {{ range $tiles }}
+      <div class="column">
+        <article class="media is-large">
+          <figure class="media-left">
+            <span class="icon is-medium has-text-primary">
+              <i class="fa-2x {{ .icon }}"></i>
+            </span>
+          </figure>
+
+          <div class="media-content">
+            <div class="content is-medium">
+              <p class="title is-size-4 is-size-5-mobile has-text-black has-text-weight-bold">
+                {{ .heading }}
+              </p>
+
+              <p class="has-text-weight-light">
+                {{ .text | markdownify }}
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

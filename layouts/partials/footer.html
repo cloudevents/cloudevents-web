@@ -1,49 +1,71 @@
-<footer id="footer">
+{{ $logo   := printf "img/logos/%s" site.Params.logos.footer | relURL }}
+{{ $desc   := site.Params.description }}
+{{ $year   := now.Year }}
+{{ $sdks   := site.Params.sdks }}
+{{ $menu   := site.Menus.main }}
+{{ $social := site.Params.social }}
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-one-quarter">
+        <img class="footer-logo" src="{{ $logo }}">
+      </div>
 
-        <section>
-          <h2>{{ .Site.Params.footer.title }}</h2>
-          <p>{{ .Site.Params.footer.description | markdownify }}</p>
-          <ul class="actions">
-            {{range $button := .Site.Params.footer.action }}
-              <li>
-                <a href="{{ $button.href }}" class="button {{ $button.customClass }}">{{ $button.buttontext }}</a>
-              </li>
-            {{ end }}
-          </ul>  
-        </section>
-        
-        <section>
-            {{ if .Site.Params.footer.second_title }}
-            <h2>{{ .Site.Params.footer.second_title }}</h2>
-            <dl class="alt">
-              {{ with .Site.Params.footer.address }}
-                <dt>Address</dt>
-                <dd>{{ . | markdownify }}</dd>
-              {{ end }}
-              {{ with .Site.Params.footer.phone }}
-                <dt>Phone</dt>
-                <dd>{{ . | markdownify }}</dd>
-              {{ end }}
-              {{ with .Site.Params.footer.email }}
-              <dt>Email</dt>
-              <dd><a href="mailto:{{.Site.Params.footer.email}}">{{.Site.Params.footer.email | markdownify }}</a></dd>
-              {{ end }}
-            </dl>            
-            {{ end }}
+      <div class="column">
+        <p class="title has-text-weight-bold">
+          CloudEvents
+        </p>
 
-            {{ if isset .Site.Params "groupsiourl" }}{{ partial "groups-io" . }}{{ end }}
+        <hr class="thick" />
 
-            {{ if .Site.Params.footer.social_list.enable }}
-              <ul class="icons">
-                {{ range .Site.Params.footer.social }}
-                  <li><a href="{{ .link }}" class="icon alt {{ .icon }}"><span class="label">{{ .title }}</span></a></li>
-                {{ end }}
-              </ul>
-            {{ end }}
-          </section>
-          
-          {{ if .Site.Params.footer.copyright.enable }}
-            <p class="copyright">{{.Site.Params.footer.copyright.text | markdownify }}</a></p>      
+        <p class="subtitle is-size-5 is-size-6-mobile has-text-weight-light">
+          {{ $desc }}
+        </p>
+
+        {{ range $menu }}
+        {{ $isExternal := hasPrefix .URL "http" }}
+        <a href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+          {{ .Name }}
+        </a>
+        {{ end }}
+
+        <br /><br />
+
+        <p class="has-text-weight-bold">
+          SDKs
+        </p>
+
+        {{ range $sdks }}
+        {{ $link := printf "https://github.com/cloudevents/sdk-%s" .tag }}
+        <a href="{{ $link }}" target="_blank">
+          {{ .name }}
+        </a>
+        {{ end }}
+
+        <br /><br />
+
+        <div class="buttons is-radiusless">
+          {{ range $social }}
+          <a class="button is-small is-{{ .color }} is-radiusless" href="{{ .url }}" target="_blank">
+            <span class="icon">
+              <i class="fab fa-{{ .tag }}"></i>
+            </span>
+          </a>
           {{ end }}
-        
-      </footer>
+        </div>
+
+        <hr class="has-background-grey-light" />
+
+        <div class="has-text-weight-light copyright">
+          <p>
+            &copy; CloudEvents Authors {{ $year }} | Documentation Distributed under CC-BY-4.0
+          </p>
+  
+          <p>
+            &copy; {{ $year }} The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage/">Trademark Usage</a> page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
