@@ -124,7 +124,7 @@ tag = "python"
 tag = "github"
 name = "GitHub"
 url = "https://github.com/cloudevents"
-color = "white"
+color = "black"
 
 [[params.social]]
 tag = "twitter"

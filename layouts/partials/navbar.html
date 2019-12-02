@@ -89,7 +89,8 @@
         <div class="navbar-item">
           <div class="buttons">
             {{ range $social }}
-            <a class="button is-{{ .color }} is-radiusless" href="{{ .url }}" target="_blank">
+            {{ $color := cond (eq .color "black") "white" .color }}
+            <a class="button is-{{ $color }} is-radiusless" href="{{ .url }}" target="_blank">
               <span class="icon">
                 <i class="fab fa-{{ .tag }}"></i>
               </span>
