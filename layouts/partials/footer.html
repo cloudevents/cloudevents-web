@@ -4,6 +4,7 @@
 {{ $sdks   := site.Params.sdks }}
 {{ $menu   := site.Menus.main }}
 {{ $social := site.Params.social }}
+{{ $integ  := site.Data.integrations }}
 <footer class="footer">
   <div class="container">
     <div class="columns is-vcentered">
@@ -22,27 +23,53 @@
           {{ $desc }}
         </p>
 
-        {{ range $menu }}
-        {{ $isExternal := hasPrefix .URL "http" }}
-        <a href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
-          {{ .Name }}
-        </a>
-        {{ end }}
+        <div class="columns">
+          <div class="column is-one-third">
+            <ul>
+              {{ range $menu }}
+              {{ $isExternal := hasPrefix .URL "http" }}
+              <li>
+                <a href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+                  {{ .Name }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
 
-        <br /><br />
+          <div class="column is-one-third">
+            <p class="has-text-weight-bold">
+              SDKs
+            </p>
+    
+            <ul>
+              {{ range $sdks }}
+              {{ $link := printf "https://github.com/cloudevents/sdk-%s" .tag }}
+              <li>
+                <a href="{{ $link }}" target="_blank">
+                  {{ .name }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
 
-        <p class="has-text-weight-bold">
-          SDKs
-        </p>
+          <div class="column is-one-third">
+            <p class="has-text-weight-bold">
+              Integrations
+            </p>
 
-        {{ range $sdks }}
-        {{ $link := printf "https://github.com/cloudevents/sdk-%s" .tag }}
-        <a href="{{ $link }}" target="_blank">
-          {{ .name }}
-        </a>
-        {{ end }}
-
-        <br /><br />
+            <ul>
+              {{ range $integ }}
+              <li>
+                <a href="{{ .url }}" target="_blank">
+                  {{ .name }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
 
         <div class="buttons is-radiusless">
           {{ range $social }}
