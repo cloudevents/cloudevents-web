@@ -3,3 +3,8 @@
     Event Grid natively supports events in the [JSON implementation of CloudEvents v1.0](https://github.com/cloudevents/spec/blob/v1.0/json-format.md) and the [HTTP protocol binding](https://github.com/cloudevents/spec/blob/v1.0/http-protocol-binding.md)
   url: https://azure.microsoft.com/en-us/services/event-grid
   logo: event-grid.png
+- name: Serverless.com Event Gateway
+  description: |
+    All event data that functions receive from the Event Gateway is CloudEvents compliant
+  url: https://serverless.com/event-gateway/
+  logo: serverless-event-gateway.png
