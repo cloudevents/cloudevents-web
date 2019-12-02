@@ -1,14 +1,26 @@
 {{ $logo := printf "img/logos/%s" site.Params.logos.hero | relURL }}
 {{ $desc := site.Params.description }}
-<section class="hero is-medium" id="home-hero">
+<section class="hero is-black is-medium" id="home-hero">
   <div class="container">
-    <div class="hero-body has-text-centered">
+    <div class="hero-body">
       <div class="container">
-        <img class="title is-spaced" src="{{ $logo }}" alt="CloudEvents hero logo">
+        <div class="columns is-vcentered">
+          <div class="column is-one-third">
+            <img class="hero-logo" src="{{ $logo }}" alt="CloudEvents hero logo">
+          </div>
 
-        <p class="subtitle is-size-2 is-size-4-mobile has-text-weight-light is-spaced">
-          {{ $desc }}
-        </p>
+          <div class="column">
+            <p class="title is-size-1 is-size-2-mobile has-text-weight-bold is-spaced">
+              cloudevents
+            </p>
+
+            <hr class="has-background-primary" />
+
+            <p class="subtitle is-size-3 is-size-4-mobile has-text-weight-light">
+              {{ $desc }}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -3,11 +3,17 @@
 {{ $menu   := site.Menus.main }}
 {{ $sdks   := site.Params.sdks }}
 {{ $social := site.Params.social }}
-<nav class="navbar is-fixed-top has-shadow">
+<nav class="navbar is-black is-fixed-top">
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="{{ $home }}">
-        <img src="{{ $logo }}" alt="CloudEvents navbar logo">
+        <span class="icon">
+          <img src="{{ $logo }}" alt="CloudEvents navbar logo">
+        </span>
+        &nbsp;
+        <span>
+          cloudevents
+        </span>
       </a>
 
       <a role="button" class="navbar-burger" data-target="navbar-menu" aria-label="menu" aria-expanded="false">
@@ -26,7 +32,7 @@
             {{ .Name }}
           </a>
 
-          <div class="navbar-dropdown">
+          <div class="navbar-dropdown is-right">
             {{ range .Children }}
             {{ $isExternal := hasPrefix .URL "http" }}
             <a class="navbar-item" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
@@ -64,7 +70,7 @@
             SDKs
           </a>
 
-          <div class="navbar-dropdown">
+          <div class="navbar-dropdown is-right">
             {{ range $sdks }}
             {{ $link := printf "https://github.com/cloudevents/sdk-%s" .tag }}
             <a class="navbar-item" href="{{ $link }}" target="_blank">
@@ -78,21 +84,21 @@
             </a>
             {{ end }}
           </div>
+        </div>
 
-          <div class="navbar-item">
-            <div class="buttons">
-              {{ range $social }}
-              <a class="button is-{{ .color }} is-radiusless" href="{{ .url }}" target="_blank">
-                <span class="icon">
-                  <i class="fab fa-{{ .tag }}"></i>
-                </span>
-  
-                <span>
-                  {{ .name}}
-                </span>
-              </a>
-              {{ end }}
-            </div>
+        <div class="navbar-item">
+          <div class="buttons">
+            {{ range $social }}
+            <a class="button is-{{ .color }} is-radiusless" href="{{ .url }}" target="_blank">
+              <span class="icon">
+                <i class="fab fa-{{ .tag }}"></i>
+              </span>
+
+              <span>
+                {{ .name}}
+              </span>
+            </a>
+            {{ end }}
           </div>
         </div>
       </div>

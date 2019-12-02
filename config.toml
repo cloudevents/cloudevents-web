@@ -11,8 +11,8 @@ description = "A specification for describing event data in a common way"
 font_awesome_version = "5.11.2"
 
 [params.logos]
-navbar = "cloudevents-horizontal-color.png"
-hero = "cloudevents-horizontal-color.png"
+navbar = "cloudevents-icon-color.png"
+hero = "cloudevents-icon-color.png"
 footer = "cloudevents-icon-color.png"
 
 [params.why]
