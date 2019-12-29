@@ -1,0 +1,108 @@
+{{ $home   := site.BaseURL }}
+{{ $logo   := printf "img/logos/%s" site.Params.logos.navbar | relURL }}
+{{ $menu   := site.Menus.main }}
+{{ $sdks   := site.Params.sdks }}
+{{ $social := site.Params.social }}
+<nav class="navbar is-black is-fixed-top">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{ $home }}">
+        <span class="icon">
+          <img src="{{ $logo }}" alt="CloudEvents navbar logo">
+        </span>
+        &nbsp;
+        <span>
+          cloudevents
+        </span>
+      </a>
+
+      <a role="button" class="navbar-burger" data-target="navbar-menu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="navbar-menu">
+      <div class="navbar-end">
+        {{ range $menu }}
+        {{ if .HasChildren }}
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            {{ .Name }}
+          </a>
+
+          <div class="navbar-dropdown is-right">
+            {{ range .Children }}
+            {{ $isExternal := hasPrefix .URL "http" }}
+            <a class="navbar-item" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+              {{ .Name }}
+              {{ if $isExternal }}
+              &nbsp;
+              <sup>
+                <span class="icon is-small has-text-primary">
+                  <i class="fas fa-xs fa-external-link-alt"></i>
+                </span>
+              </sup>
+              {{ end }}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ else }}
+        {{ $isExternal := hasPrefix .URL "http" }}
+        <a class="navbar-item" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+          {{ .Name }}
+          {{ if $isExternal }}
+          &nbsp;
+          <sup>
+            <span class="icon is-small has-text-primary">
+              <i class="fas fa-xs fa-external-link-alt"></i>
+            </span>
+          </sup>
+          {{ end }}
+        </a>
+        {{ end }}
+        {{ end }}
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            SDKs
+          </a>
+
+          <div class="navbar-dropdown is-right">
+            {{ range $sdks }}
+            {{ $link := printf "https://github.com/cloudevents/sdk-%s" .tag }}
+            <a class="navbar-item" href="{{ $link }}" target="_blank">
+              {{ .name }}
+              &nbsp;
+              <sup>
+                <span class="icon is-small has-text-primary">
+                  <i class="fas fa-xs fa-external-link-alt"></i>
+                </span>
+              </sup>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+
+        <div class="navbar-item">
+          <div class="buttons">
+            {{ range $social }}
+            {{ $color := cond (eq .color "black") "white" .color }}
+            <a class="button is-{{ $color }} is-radiusless" href="{{ .url }}" target="_blank">
+              <span class="icon">
+                <i class="fab fa-{{ .tag }}"></i>
+              </span>
+
+              <span>
+                {{ .name}}
+              </span>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

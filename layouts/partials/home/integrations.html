@@ -1,0 +1,46 @@
+{{ $integrations := site.Data.integrations }}
+<section class="section has-background-light">
+  <div class="container">
+    <p class="title is-size-3 is-size-4-mobile has-text-weight-light is-spaced">
+      Integrations
+    </p>
+
+    <hr class="thick" />
+
+    <br />
+
+    <div class="columns is-multiline">
+      {{ range $integrations }}
+      {{ $logo := printf "img/logos/integrations/%s" .logo | relURL }}
+      {{ $alt  := printf "%s logo" .name }}
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-content">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <figure class="image is-64x64">
+                  <img src="{{ $logo }}" alt="{{ $alt }}">
+                </figure>
+              </div>
+
+              <div class="column">
+                <p class="title is-three-quarters is-size-4 is-size-5-mobile has-text-weight-light{{ if .description }} is-spaced{{ end }}">
+                  <a href="{{ .url }}" target="_blank">
+                    {{ .name }}
+                  </a>
+                </p>
+
+                {{ with .description }}
+                <p>
+                  {{ . | markdownify }}
+                </p>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

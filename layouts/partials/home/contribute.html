@@ -1,0 +1,12 @@
+{{ $contribute := site.Params.contribute.text | markdownify }}
+<div class="column">
+  <p class="title is-size-3 is-size-4-mobile has-text-white-bis has-text-weight-light">
+    Contribute to the CloudEvents project
+  </p>
+
+  <hr class="thick" />
+
+  <div class="content is-size-5 is-size-6-mobile has-text-grey-light">
+    {{ $contribute }}
+  </div>
+</div>

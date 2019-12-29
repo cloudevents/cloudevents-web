@@ -1,166 +1,133 @@
-# Site settings
-baseurl = "https://cloudevents.io/"
-languageCode = "en-us"
 title = "CloudEvents"
-theme = "hugo-stellar-theme"
-canonifyurls = true
-googleAnalytics = ""
+baseURL = "/"
+languageCode = "en-us"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[blackfriday]
+hrefTargetBlank = true
 
 [params]
-groupsiourl = "https://lists.cncf.io/g/cncf-cloudevents/signup?u=2254653446843417778"
-groupsioid = "2254653446843417778"
-github = "https://github.com/cloudevents/spec"
+description = "A specification for describing event data in a common way"
+font_awesome_version = "5.11.2"
 
-  [params.header]
-    title = ""
-    description = "A specification for describing event data in a common way"
-    image = "img/cloudevents.png"
+[params.logos]
+navbar = "cloudevents-icon-color.png"
+hero = "cloudevents-icon-color.png"
+footer = "cloudevents-icon-color.png"
 
-  [[params.navigation]]
-    name = "Why?"
-    href = "#why"
+[params.why]
+heading = "Events are everywhere, yet event publishers tend to describe events differently."
 
-  [[params.navigation]]
-    name = "What?"
-    href = "#what"
+[[params.why.tiles]]
+heading = "Consistency"
+text = "The lack of a common way of describing events means developers have to write new event handling logic for each event source."
+icon = "fas fa-code"
 
-  [[params.navigation]]
-    name = "Contribute"
-    href = "#contribute"
+[[params.why.tiles]]
+heading = "Accessibility"
+text = "No common event format means no common libraries, tooling, and infrastructure for deliverying event data across environments. CloudEvents provides SDKs for [Go](https://github.com/cloudevents/sdk-go), [JavaScript](https://github.com/cloudevents/sdk-javascript), [Java](https://github.com/cloudevents/sdk-java), [C#](https://github.com/cloudevents/sdk-csharp), [Ruby](https://github.com/cloudevents/sdk-ruby), and [Python](https://github.com/cloudevents/sdk-python) that can be used to build event routers, tracing systems, and other tools."
+icon = "fas fa-universal-access"
 
-  [[params.navigation]]
-    name = "v1.0 Announcement"
-    href = "#v10"
+[[params.why.tiles]]
+heading = "Portability"
+text = "The portability and productivity we can achieve from event data is hindered overall."
+icon = "far fa-gem"
 
-  # [params.intro]
-  #   title = "Why?"
-  #   description = "Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam."
-  #   image = "images/pic01.jpg"
-  #   [[params.intro.action]]
-  #     buttontext = "Learn More"
-  #     href = "generic.html"
+[params.what]
+text = """
+CloudEvents is a [specification](https://github.com/cloudevents/spec/blob/master/spec.md) for describing event data in a common way. CloudEvents seeks to dramatically simplify event declaration and delivery across services, platforms, and beyond!
 
-
-  [[params.section]]
-    id = "why"
-    title = "Why?"
-    description = "Events are everywhere.  However, event publishers tend to describe events differently."
-    
-    # the picture is storead at static/images/
-    [params.section.features]
-      enable = true
-      [[params.section.feature]]
-        title = "Consistency"
-        description = "The lack of a common way of describing events means developers must constantly re-learn how to receive events."
-        icon = "fa-code"
-
-      [[params.section.feature]]
-        title = "Accessibility"
-        description = "This also limits the potential for libraries, tooling and infrastructure to aide the delivery of event data across environments, like SDKs, event routers or tracing systems."
-        icon = "fa-copy"
-
-      [[params.section.feature]]
-        title = "Portability"
-        description = "The portability and productivity we can achieve from event data is hindered overall."
-        icon = "fa-diamond"
-    [params.section.footer]
-      enable = false
-      [[params.section.footer.action]]
-        buttontext = "Learn More"
-        buttonUrl = "generic.html"
-
-  [[params.section]]
-    id = "what"
-    title = "What?"
-    description = "Enter CloudEvents, a specification for describing event data in a common way. CloudEvents seeks to ease event declaration and delivery across services, platforms and beyond!\n\nCloudEvents is a new effort and it's still under active development.  However, its working group has received a surprising amount of industry interest, ranging from major cloud providers to popular SaaS companies.  Our end goal is to offer this specification to the [Cloud Native Computing Foundation](https://serverless.us11.list-manage.com/pages/track/click?u=b4fad36768cab222f88338995&id=59a5aec830)."
-
-    [params.section.statistics]
-      enable = false
-      [[params.section.statistic]]
-        icon = "fa-code-fork"
-        value = "5,120"
-        text = "Etiam"
-      [[params.section.statistic]]
-        icon = "fa-folder-open-o"
-        value = "8,192"
-        text = "Magna"
-      [[params.section.statistic]]
-        icon = "fa-signal"
-        value = "2,048"
-        text = "Tempus"
-      [[params.section.statistic]]
-        icon = "fa-laptop"
-        value = "4,096"
-        text = "Aliquam"
-      [[params.section.statistic]]
-        icon = "fa-diamond"
-        value = "1,024"
-        text = "Nullam"
-
-    [params.section.content]
-      enable = false
-      text = "Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia."
-
-    [params.section.footer]
-      enable = true
-      [[params.section.footer.action]]
-        buttontext = "Cloud Native Computing Foundation"
-        buttonUrl = "https://serverless.us11.list-manage.com/pages/track/click?u=b4fad36768cab222f88338995&id=59a5aec830"
-
-
-  [[params.section]]
-    id = "contribute"
-    title = "Contribute!"
-    description = "This effort is organized via the CNCF's [Serverless Working Group](https://github.com/cncf/wg-serverless) and everyone is encouraged to join us.  If you're interested in contributing, please collaborate with us in the [CloudEvents Github Org](https://github.com/cloudevents), join our weekly call every Thursday at 9AM PT via [Zoom](https://zoom.us/my/cncfserverlesswg), and review our [Governance](https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md) model to familiarize yourself with our process."
-    [params.section.footer]
-      enable = true
-      [[params.section.footer.action]]
-        buttontext = "Serverless Working Group"
-        buttonUrl = "https://github.com/cncf/wg-serverless"
-      [[params.section.footer.action]]
-        buttontext = "CloudEvents Github Org"
-        buttonUrl = "https://github.com/cloudevents"
-      [[params.section.footer.action]]
-        buttontext = "Governance"
-        buttonUrl = "https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md"
-
-  [[params.section]]
-    id = "v10"
-    title = "v1.0 Announcement!"
-    description = """# CloudEvents 1.0 Release
-
-<span style="text-align:left">
-On October 24, 2019 the CloudEvents project had two significant achievements. First, the CNCF's Technical Oversight Committee approved the project as an "incubator" project, graduating from "sandbox". Second, the CloudEvents specification released version 1.0 of its deliverables! 
-
-This is the first major release of the specification and represents two year's worth of hard work by a truly great team of people from across the entire serverless community. We've had just about every major cloud provider participate, several "end-user" companies as well as many individual participants all working diligently on producing a specification that will hopefully continue to see increased adoption now that this milestone has been reached.
-
-Aside from the [core CloudEvents specification](https://github.com/cloudevents/spec/blob/v1.0/spec.md), there's also the [Primer](https://github.com/cloudevents/spec/blob/v1.0/primer.md) and protocol and format specifications (all of which can be found on the [github repo](https://github.com/cloudevents/spec). Additionally, there are 5 different [SDKs](https://github.com/cloudevents/spec#sdks) to help people produce and consume CloudEvents.
-
-The CNCF Serverless Working Group will be deciding what to focus on next (e.g. additional CloudEvents related activities, or perhaps address some other interoperability pain-point the community is experiencing). So, if you're interested please join the regular [weekly calls](https://github.com/cloudevents/spec#meeting-time). Additionally, there is the work being done on the [workflow](https://github.com/cncf/wg-serverless/tree/master/workflow/spec) specification.
-
-Thanks and congratulations to everyone who participated in this work!
-</span>
+CloudEvents is a new effort and it's still under active development. However, its working group has received a surprising amount of industry interest, ranging from major cloud providers to popular SaaS companies. The specification is now under the [Cloud Native Computing Foundation](https://cncf.io).
 """
 
-  [params.footer]
-    enable = true
-    title = "CloudEvents"
-    description = "A specification for describing event data in a common way."
+[params.contribute]
+text = """
+CloudEvents is organized via the CNCF's [Serverless Working Group](https://github.com/cncf/wg-serverless) and everyone is encouraged to join us. If you're interested in contributing, please collaborate with us in the [CloudEvents Github org](https://github.com/cloudevents), join our weekly call every Thursday at 9AM PT via [Zoom](https://zoom.us/my/cncfserverlesswg), and review our [Governance](https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md) model to familiarize yourself with our process.
+"""
 
-    [[params.footer.action]]
-      href = "https://github.com/cloudevents/spec"
-      buttontext = "Learn More"
+[params.release]
+text = """
+On October 24, 2019 the CloudEvents project had two significant achievements. First, the CNCF's [Technical Oversight Committee](https://github.ccom/cncf/toc) approved the project as an "incubator" project (thus graduating it from the CNCF "sandbox"). Second, the CloudEvents specification released version 1.0!
 
-    # social icons
-    [params.footer.social_list]
-      enable = true
+This is the first major release of the specification and represents two years' worth of hard work by a truly great team of people from across the entire serverless community. We've had just about every major cloud provider participate, several "end user" companies as well as many individual participants all working diligently on producing a specification that will hopefully continue to see increased adoption now that this milestone has been reached.
 
-      [[params.footer.social]]
-        title = "Github"
-        icon = "fa-github"
-        link = "https://github.com/cloudevents/spec"
+Aside from the [core CloudEvents specification](https://github.com/cloudevents/spec/blob/v1.0/spec.md), there's also the [Primer](https://github.com/cloudevents/spec/blob/v1.0/primer.md) and protocol and format specifications, all of which can be found in the [GitHub repo](https://github.com/cloudevents/spec). Additionally, there are six different [SDKs](https://github.com/cloudevents/spec#sdks)—[Go](https://github.com/cloudevents/sdk-go), [JavaScript](https://github.com/cloudevents/sdk-javascript), [Java](https://github.com/cloudevents/sdk-java), [C#](https://github.com/cloudevents/sdk-csharp), [Ruby](https://github.com/cloudevents/sdk-ruby), and [Python](https://github.com/cloudevents/sdk-python)—to help people produce and consume CloudEvents.
 
-    # copyright
-    [params.footer.copyright]
-      enable = true
-      text = "© CloudEvents.io 2018"
+The CNCF Serverless Working Group will be deciding what to focus on next (e.g. additional CloudEvents related activities, or perhaps address some other interoperability pain-point the community is experiencing). So, if you're interested please join the regular [weekly calls](https://github.com/cloudevents/spec#meeting-time). Additionally, there is the work being done on the [workflow specification](https://github.com/cncf/wg-serverless/tree/master/workflow/spec).
+
+Thanks and congratulations to everyone who has participated in the CloudEvents project! 
+"""
+
+[[params.fonts]]
+name = "Montserrat"
+sizes = [300, 400, 600, 700]
+type = "sans_serif"
+
+[[menus.main]]
+name = "Specification"
+url = "https://github.com/cloudevents/spec"
+weight = 1
+
+[[menus.main]]
+name = "Primer"
+url = "https://github.com/cloudevents/spec/blob/master/primer.md"
+weight = 2
+
+[[menus.main]]
+identifier = "project"
+name = "Project"
+weight = 3
+
+[[menus.main]]
+name = "Code of conduct"
+url = "https://github.com/cncf/foundation/blob/master/code-of-conduct.md"
+parent = "project"
+weight = 1
+
+[[menus.main]]
+name = "Governance"
+url = "https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md"
+parent = "project"
+weight = 2
+
+[[menus.main]]
+name = "Contributors"
+url = "https://github.com/cloudevents/spec/blob/master/community/contributors.md"
+parent = "project"
+weight = 3
+
+[[params.sdks]]
+name = "Go"
+tag = "go"
+
+[[params.sdks]]
+name = "JavaScript"
+tag = "javascript"
+
+[[params.sdks]]
+name = "Java"
+tag = "java"
+
+[[params.sdks]]
+name = "C#"
+tag = "csharp"
+
+[[params.sdks]]
+name = "Ruby"
+tag = "ruby"
+
+[[params.sdks]]
+name = "Python"
+tag = "python"
+
+[[params.social]]
+tag = "github"
+name = "GitHub"
+url = "https://github.com/cloudevents"
+color = "black"
+
+[[params.social]]
+tag = "twitter"
+name = "Twitter"
+url = "https://twitter.com/CloudEventsIO"
+color = "twitter-blue"

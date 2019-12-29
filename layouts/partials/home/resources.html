@@ -1,0 +1,52 @@
+{{ $resources := site.Data.resources }}
+{{ $videos    := $resources.videos }}
+<section class="section">
+  <div class="container">
+    <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
+      Resources
+    </p>
+
+    <hr class="thick" />
+
+    <div class="columns is-variable is-8">
+      <div class="column">
+        <p class="title is-size-4 is-size-5-mobile">
+          Videos
+        </p>
+
+        <table class="table is-medium">
+          <thead>
+            <tr>
+              <th>
+                Title
+              </th>
+              <th>
+                Speakers
+              </th>
+              <th>
+                Event
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $videos }}
+            <tr>
+              <td>
+                <a href="{{ .url }}" target="_blank">
+                  {{ .title }}
+                </a>
+              </td>
+              <td>
+                {{ .speakers }}
+              </td>
+              <td>
+                {{ .event }}
+              </td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
