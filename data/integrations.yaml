@@ -8,3 +8,8 @@
     All event data that functions receive from the Event Gateway is CloudEvents compliant
   url: https://serverless.com/event-gateway/
   logo: serverless-event-gateway.png
+- name: Knative Eventing
+  description: |
+    All event data produced and consumed by Knative Eventing services is CloudEvents compliant
+  url: https://knative.dev/docs/eventing/
+  logo: knative.png
