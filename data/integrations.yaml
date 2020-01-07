@@ -13,3 +13,13 @@
     All event data produced and consumed by Knative Eventing services is CloudEvents compliant
   url: https://knative.dev/docs/eventing/
   logo: knative.png
+- name: OpenFaaS
+  description: |
+    CloudEvent events are one of the many available triggers for OpenFaaS functions
+  url: https://docs.openfaas.com/reference/triggers/#cloudevents
+  logo: openfaas.svg
+- name: Oracle Cloud
+  description: |
+    The Oracle Cloud Infrastructure Events service implements CloudEvents
+  url: https://blogs.oracle.com/cloud-infrastructure/track-and-react-to-cloud-native-event
+  logo: oracle.png
