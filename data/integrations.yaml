@@ -10,7 +10,7 @@
   logo: serverless-event-gateway.png
 - name: Choria
   description: |
-    Events emitted by the Choria orchestration system
+    All Life Cycle and Autonomous Agent events emitted by the Choria orchestration system are CloudEvents compliant
   url: https://choria.io/blog/post/2019/12/05/cloudevents_transition
   logo: choria.png
 - name: Knative Eventing
