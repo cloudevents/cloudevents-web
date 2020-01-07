@@ -13,4 +13,8 @@
     Events emitted by the Choria orchestration system
   url: https://choria.io/blog/post/2019/12/05/cloudevents_transition
   logo: choria.png
-  
+- name: Knative Eventing
+  description: |
+    All event data produced and consumed by Knative Eventing services is CloudEvents compliant
+  url: https://knative.dev/docs/eventing/
+  logo: knative.png
