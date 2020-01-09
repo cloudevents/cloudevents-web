@@ -8,6 +8,11 @@
     All event data that functions receive from the Event Gateway is CloudEvents compliant
   url: https://serverless.com/event-gateway/
   logo: serverless-event-gateway.png
+- name: Choria
+  description: |
+    All Life Cycle and Autonomous Agent events emitted by the Choria orchestration system are CloudEvents compliant
+  url: https://choria.io/blog/post/2019/12/05/cloudevents_transition
+  logo: choria.png
 - name: Knative Eventing
   description: |
     All event data produced and consumed by Knative Eventing services is CloudEvents compliant
