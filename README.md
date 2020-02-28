@@ -1,5 +1,7 @@
 # cloudevents-web
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4718c8cb-9281-43aa-a411-d542cefcea15/deploy-status)](https://app.netlify.com/sites/cloudevents-io/deploys)
+
 Source files for the CloudEvents website.
 
 ## Installation
