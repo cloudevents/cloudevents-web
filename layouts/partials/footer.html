@@ -27,12 +27,14 @@
           <div class="column is-one-third">
             <ul>
               {{ range $menu }}
+              {{ if not .HasChildren }}
               {{ $isExternal := hasPrefix .URL "http" }}
               <li>
                 <a href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
                   {{ .Name }}
                 </a>
               </li>
+              {{ end }}
               {{ end }}
             </ul>
           </div>

@@ -4,3 +4,7 @@ resources/
 
 # npm/Yarn assets
 node_modules/
+
+# Link checker assets
+bin/
+tmp/
