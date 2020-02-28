@@ -3,9 +3,6 @@ baseURL = "/"
 languageCode = "en-us"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
-[blackfriday]
-hrefTargetBlank = true
-
 [params]
 description = "A specification for describing event data in a common way"
 font_awesome_version = "5.11.2"
@@ -95,6 +92,11 @@ name = "Contributors"
 url = "https://github.com/cloudevents/spec/blob/master/community/contributors.md"
 parent = "project"
 weight = 3
+
+[[menus.main]]
+name = "Blog"
+url = "/blog"
+weight = 4
 
 [[params.sdks]]
 name = "Go"

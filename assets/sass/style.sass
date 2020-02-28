@@ -9,13 +9,14 @@
 {{ $fontAwesomeUrl     := printf "https://use.fontawesome.com/releases/v%s/css/all.css" $fontAwesomeVersion }}
 
 @charset "utf-8"
-@import url({{ $fontsUrl }})
-@import url({{ $fontAwesomeUrl }})
+@import url("{{ $fontsUrl }}")
+@import url("{{ $fontAwesomeUrl }}")
 
 // Custom site colors
 $cloudevents-light-blue: #4dcef3
 $cloudevents-dark-blue: #1DC1F0
 $twitter-blue: #00aced
+$rss-orange: #f26522
 
 @import "bulma/sass/utilities/initial-variables"
 
@@ -32,7 +33,7 @@ $navbar-dropdown-offset: 1rem
 @import "bulma/sass/utilities/functions"
 @import "bulma/sass/utilities/derived-variables"
 
-$colors: mergeColorMaps($colors, ("twitter-blue": ($twitter-blue, $white)))
+$colors: mergeColorMaps($colors, ("rss-orange": ($rss-orange, $white), "twitter-blue": ($twitter-blue, $white)))
 
 @import "bulma/bulma"
 
@@ -76,3 +77,11 @@ hr.thick
 a
   font-weight: 600
   color: $secondary
+
+.has-bottom-padding
+  padding-bottom: 5rem
+
+.is-sticky
+  top: $navbar-height + 2.5rem
+  position: sticky
+  position: -webkit-sticky

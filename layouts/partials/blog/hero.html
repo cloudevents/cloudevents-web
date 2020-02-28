@@ -1,0 +1,41 @@
+{{ $title  := .Title }}
+{{ $desc   := .Params.description }}
+{{ $date   := dateFormat "January 2, 2006" .Date }}
+{{ $author := .Params.author }}
+{{ $isMain := eq .File.BaseFileName "_index" }}
+<section class="hero is-medium has-background-white-bis">
+  <div class="hero-body">
+    <div class="container">
+      <p class="title is-size-1 is-size-2-mobile{{ if $desc }} is-spaced{{ end }}">
+        {{ .Title }}
+      </p>
+
+      {{ with $desc }}
+      <p class="subtitle is-size-3 is-size-4-mobile">
+        {{ . }}
+      </p>
+      {{ end }}
+
+      {{ with $author }}
+      {{ if .url }}
+      <a class="is-size-3 is-size-4-mobile" href="{{ .url }}" target="_blank">
+        {{ .name }}
+      </a>
+      {{ else }}
+      <p>
+        {{ .name }}
+      </p>
+      {{ end }}
+      {{ end }}
+
+      {{ if not $isMain }}
+      {{ with $date }}
+      <br /><br />
+      <p class="is-size-4 is-size-5-mobile has-text-weight-bold">
+        {{ . }}
+      </p>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
