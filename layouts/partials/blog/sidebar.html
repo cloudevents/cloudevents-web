@@ -1,14 +1,16 @@
 {{ $posts := where site.RegularPages "Section" "blog" }}
 
-<p class="title is-size-4 is-size-5-mobile">
+<p class="title is-size-3 is-size-4-mobile">
   Previous posts
 </p>
 
 <ul>
   {{ range $posts }}
   <li>
-    <a href="{{ .RelPermalink }}">
-      {{ .Title }}
+    <a class="is-size-5 is-size-6-mobile" href="{{ .RelPermalink }}">
+      <span>
+        {{ .Title }}
+      </span>
     </a>
   </li>
   {{ end }}

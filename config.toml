@@ -93,11 +93,6 @@ url = "https://github.com/cloudevents/spec/blob/master/community/contributors.md
 parent = "project"
 weight = 3
 
-[[menus.main]]
-name = "Blog"
-url = "/blog"
-weight = 4
-
 [[params.sdks]]
 name = "Go"
 tag = "go"

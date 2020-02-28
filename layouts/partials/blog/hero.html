@@ -1,8 +1,8 @@
-{{ $title  := .Title }}
-{{ $desc   := .Params.description }}
-{{ $date   := dateFormat "January 2, 2006" .Date }}
-{{ $author := .Params.author }}
-{{ $isMain := eq .File.BaseFileName "_index" }}
+{{ $title    := .Title }}
+{{ $desc     := .Params.description }}
+{{ $date     := dateFormat "January 2, 2006" .Date }}
+{{ $author   := .Params.author }}
+{{ $isMain   := eq .File.BaseFileName "_index" }}
 <section class="hero is-medium has-background-white-bis">
   <div class="hero-body">
     <div class="container">
@@ -35,6 +35,21 @@
         {{ . }}
       </p>
       {{ end }}
+      {{ end }}
+
+      {{ if $isMain }}
+      <br />
+
+      <div class="buttons">
+        <a class="button is-rss-orange" href="/blog/index.xml">
+          <span class="icon">
+            <i class="fas fa-rss"></i>
+          </span>
+          <span>
+            RSS
+          </span>
+        </a>
+      </div>
       {{ end }}
     </div>
   </div>
