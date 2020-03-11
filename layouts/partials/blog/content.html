@@ -1,0 +1,26 @@
+<section class="section">
+  <div class="container">
+    <div class="columns is-variable is-8">
+      <div class="column is-two-thirds">
+        <div class="content is-medium has-bottom-padding">
+          {{ .Content }}
+        </div>
+
+        <a class="button is-primary is-inverted" href="..">
+          <span class="icon">
+            <i class="fas fa-arrow-left"></i>
+          </span>
+          <span class="has-text-white">
+            Back to blog
+          </span>
+        </a>
+      </div>
+
+      <div class="column">
+        <aside class="sidebar is-sticky">
+          {{ partial "blog/sidebar.html" . }}
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>

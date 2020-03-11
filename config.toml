@@ -3,9 +3,6 @@ baseURL = "/"
 languageCode = "en-us"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
-[blackfriday]
-hrefTargetBlank = true
-
 [params]
 description = "A specification for describing event data in a common way"
 font_awesome_version = "5.11.2"

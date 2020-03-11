@@ -1,0 +1,30 @@
+{{ $posts := where site.RegularPages "Section" "blog" }}
+
+<p class="title is-size-3 is-size-4-mobile">
+  Previous posts
+</p>
+
+<ul>
+  {{ range $posts }}
+  <li>
+    <a class="is-size-5 is-size-6-mobile" href="{{ .RelPermalink }}">
+      <span>
+        {{ .Title }}
+      </span>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+
+<br /><br />
+
+<div class="buttons">
+  <a class="button is-rss-orange is-outlined " href="/blog/index.xml">
+    <span class="icon">
+      <i class="fas fa-rss"></i>
+    </span>
+    <span>
+      RSS
+    </span>
+  </a>
+</div>
