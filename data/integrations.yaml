@@ -6,7 +6,7 @@
 - name: Serverless.com Event Gateway
   description: |
     All event data that functions receive from the Event Gateway is CloudEvents compliant
-  url: https://serverless.com/event-gateway/
+  url: https://github.com/serverless/event-gateway
   logo: serverless-event-gateway.png
 - name: Choria
   description: |
