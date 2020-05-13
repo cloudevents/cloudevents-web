@@ -26,5 +26,5 @@
 - name: Oracle Cloud
   description: |
     The Oracle Cloud Infrastructure Events service implements CloudEvents
-  url: https://blogs.oracle.com/cloud-infrastructure/track-and-react-to-cloud-native-event
+  url: https://blogs.oracle.com/cloud-infrastructure/track-and-react-to-cloud-native-events
   logo: oracle.png
