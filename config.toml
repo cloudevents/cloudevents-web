@@ -117,6 +117,10 @@ tag = "ruby"
 name = "Python"
 tag = "python"
 
+[[params.sdks]]
+name = "Rust"
+tag = "rust"
+
 [[params.social]]
 tag = "github"
 name = "GitHub"
