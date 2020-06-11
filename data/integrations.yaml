@@ -28,3 +28,8 @@
     The Oracle Cloud Infrastructure Events service implements CloudEvents
   url: https://blogs.oracle.com/cloud-infrastructure/track-and-react-to-cloud-native-events
   logo: oracle.png
+- name: Kogito
+  description: |
+    All events emitted and consumed by Kogito business automation applications are CloudEvents compliant
+  url: https://kogito.kie.org/
+  logo: kogito-logo.png
