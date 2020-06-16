@@ -33,3 +33,8 @@
     All events emitted and consumed by Kogito business automation applications are CloudEvents compliant
   url: https://kogito.kie.org/
   logo: kogito-logo.png
+- name: Serverless Workflow Specification
+  description: |
+    All event definitions in the Serverless Workflow Specification JSON/YAML model are CloudEvents compliant
+  url: https://serverlessworkflow.io
+  logo: sw-logo.png
