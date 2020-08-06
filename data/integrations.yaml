@@ -38,3 +38,8 @@
     All event definitions in the Serverless Workflow Specification JSON/YAML model are CloudEvents compliant
   url: https://serverlessworkflow.io
   logo: sw-logo.png
+- name: Debezium
+  description: |
+    Debezium, a distributed open-source change data capture platform, can emit change data events [in the CloudEvents format](https://debezium.io/documentation/reference/integrations/cloudevents.html)
+  url: https://debezium.io/
+  logo: debezium.png
