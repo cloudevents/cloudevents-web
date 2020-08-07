@@ -43,3 +43,8 @@
     Debezium, a distributed open-source change data capture platform, can emit change data events [in the CloudEvents format](https://debezium.io/documentation/reference/integrations/cloudevents.html)
   url: https://debezium.io/
   logo: debezium.png
+- name: Alibaba Cloud EventBridge
+  description: |
+    A serverless event bus that receives CloudEvents compliant events from cloud services, SaaS/custom apps, and routes to various targets
+  url: https://www.aliyun.com/product/aliware/eventbridge
+  logo: alibaba-cloud-eventbridge.png
