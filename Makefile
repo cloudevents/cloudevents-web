@@ -1,5 +1,5 @@
 npm:
-	npm
+	npm install
 
 serve:
 	hugo server \
