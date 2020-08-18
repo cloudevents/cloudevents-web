@@ -1,23 +1,33 @@
+- name: Alibaba Cloud EventBridge
+  description: |
+    A serverless event bus that receives CloudEvents compliant events from cloud services, SaaS/custom apps, and routes to various targets
+  url: https://www.aliyun.com/product/aliware/eventbridge
+  logo: alibaba-cloud-eventbridge.png
 - name: Azure Event Grid
   description: |
     Event Grid natively supports events in the [JSON implementation of CloudEvents v1.0](https://github.com/cloudevents/spec/blob/v1.0/json-format.md) and the [HTTP protocol binding](https://github.com/cloudevents/spec/blob/v1.0/http-protocol-binding.md)
   url: https://azure.microsoft.com/en-us/services/event-grid
   logo: event-grid.png
-- name: Serverless.com Event Gateway
-  description: |
-    All event data that functions receive from the Event Gateway is CloudEvents compliant
-  url: https://github.com/serverless/event-gateway
-  logo: serverless-event-gateway.png
 - name: Choria
   description: |
     All Life Cycle and Autonomous Agent events emitted by the Choria orchestration system are CloudEvents compliant
   url: https://choria.io/blog/post/2019/12/05/cloudevents_transition
   logo: choria.png
+- name: Debezium
+  description: |
+    Debezium, a distributed open-source change data capture platform, can emit change data events [in the CloudEvents format](https://debezium.io/documentation/reference/integrations/cloudevents.html)
+  url: https://debezium.io/
+  logo: debezium.png
 - name: Knative Eventing
   description: |
     All event data produced and consumed by Knative Eventing services is CloudEvents compliant
   url: https://knative.dev/docs/eventing/
   logo: knative.png
+- name: Kogito
+  description: |
+    All events emitted and consumed by Kogito business automation applications are CloudEvents compliant
+  url: https://kogito.kie.org/
+  logo: kogito-logo.png
 - name: OpenFaaS
   description: |
     CloudEvent events are one of the many available triggers for OpenFaaS functions
@@ -28,23 +38,20 @@
     The Oracle Cloud Infrastructure Events service implements CloudEvents
   url: https://blogs.oracle.com/cloud-infrastructure/track-and-react-to-cloud-native-events
   logo: oracle.png
-- name: Kogito
+- name: Serverless.com Event Gateway
   description: |
-    All events emitted and consumed by Kogito business automation applications are CloudEvents compliant
-  url: https://kogito.kie.org/
-  logo: kogito-logo.png
+    All event data that functions receive from the Event Gateway is CloudEvents compliant
+  url: https://github.com/serverless/event-gateway
+  logo: serverless-event-gateway.png
 - name: Serverless Workflow Specification
   description: |
     All event definitions in the Serverless Workflow Specification JSON/YAML model are CloudEvents compliant
   url: https://serverlessworkflow.io
   logo: sw-logo.png
-- name: Debezium
+- name: TriggerMesh
   description: |
-    Debezium, a distributed open-source change data capture platform, can emit change data events [in the CloudEvents format](https://debezium.io/documentation/reference/integrations/cloudevents.html)
-  url: https://debezium.io/
-  logo: debezium.png
-- name: Alibaba Cloud EventBridge
-  description: |
-    A serverless event bus that receives CloudEvents compliant events from cloud services, SaaS/custom apps, and routes to various targets
-  url: https://www.aliyun.com/product/aliware/eventbridge
-  logo: alibaba-cloud-eventbridge.png
+    TriggerMesh makes use of CloudEvents in all its event sources and targets to build application flows.
+  url: https://www.triggermesh.com
+  logo: triggermesh.png
+
+
