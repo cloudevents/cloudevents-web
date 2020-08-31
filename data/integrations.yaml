@@ -13,6 +13,11 @@
     All Life Cycle and Autonomous Agent events emitted by the Choria orchestration system are CloudEvents compliant
   url: https://choria.io/blog/post/2019/12/05/cloudevents_transition
   logo: choria.png
+- name: commercetools
+  description: |
+    All services of the commercetools platform can emit CloudEvents compliant events
+  url: https://www.commercetools.com
+  logo: commercetools.png
 - name: Debezium
   description: |
     Debezium, a distributed open-source change data capture platform, can emit change data events [in the CloudEvents format](https://debezium.io/documentation/reference/integrations/cloudevents.html)
