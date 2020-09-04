@@ -39,7 +39,7 @@ CloudEvents is a new effort and it's still under active development. However, it
 
 [params.contribute]
 text = """
-CloudEvents is organized via the CNCF's [Serverless Working Group](https://github.com/cncf/wg-serverless) and everyone is encouraged to join us. If you're interested in contributing, please collaborate with us in the [CloudEvents Github org](https://github.com/cloudevents), join our weekly call every Thursday at [9AM PT](http://www.thetimezoneconverter.com/?t=9:00 am&tz=San Francisco) via [Zoom](https://zoom.us/my/cncfserverlesswg), check the [meeting notes](https://docs.google.com/document/d/1xwcsWQmMiRN24a7o7oy9MstzMroAup31oOkM5Dru1jQ), and review our [Governance](https://github.com/cloudevents/spec/blob/master/community/GOVERNANCE.md) model to familiarize yourself with our process.
+CloudEvents is organized via the CNCF's [Serverless Working Group](https://github.com/cncf/wg-serverless) and everyone is encouraged to join us. If you're interested in contributing, please collaborate with us in the [CloudEvents Github org](https://github.com/cloudevents), join our weekly call every Thursday at [9AM PT](http://www.thetimezoneconverter.com/?t=9:00am&tz=San Francisco) via [Zoom](https://zoom.us/my/cncfserverlesswg), check the [meeting notes](https://docs.google.com/document/d/1xwcsWQmMiRN24a7o7oy9MstzMroAup31oOkM5Dru1jQ), and review our [Governance](https://github.com/cloudevents/spec/blob/master/community/GOVERNANCE.md) model to familiarize yourself with our process.
 """
 
 [params.release]
