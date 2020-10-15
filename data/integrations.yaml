@@ -48,9 +48,9 @@
     All event data that functions receive from the Event Gateway is CloudEvents compliant
   url: https://github.com/serverless/event-gateway
   logo: serverless-event-gateway.png
-- name: Serverless Workflow Specification
+- name: Serverless Workflow
   description: |
-    All event definitions in the Serverless Workflow Specification JSON/YAML model are CloudEvents compliant
+    All event definitions in the Serverless Workflow JSON/YAML model are CloudEvents compliant
   url: https://serverlessworkflow.io
   logo: sw-logo.png
 - name: TriggerMesh
