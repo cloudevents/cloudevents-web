@@ -23,6 +23,11 @@
     Debezium, a distributed open-source change data capture platform, can emit change data events [in the CloudEvents format](https://debezium.io/documentation/reference/integrations/cloudevents.html)
   url: https://debezium.io/
   logo: debezium.png
+- name: Keptn
+  description: |
+    Keptn builds upon CloudEvents for continuous delivery and automated operations and has its [specification](https://github.com/keptn/spec) based on CloudEvents.
+  url: https://keptn.sh
+  logo: keptn.png
 - name: Knative Eventing
   description: |
     All event data produced and consumed by Knative Eventing services is CloudEvents compliant
