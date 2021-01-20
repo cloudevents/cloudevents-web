@@ -63,5 +63,8 @@
     TriggerMesh makes use of CloudEvents in all its event sources and targets to build application flows.
   url: https://www.triggermesh.com
   logo: triggermesh.png
-
-
+- name: VMware Event Broker Appliance
+  description: |
+    VMware Event Broker Appliance (VEBA) publishes CloudEvents for changes in a vSphere cluster.
+  url: https://vmweventbroker.io/
+  logo: veba.png
