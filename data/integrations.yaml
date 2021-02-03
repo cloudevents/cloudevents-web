@@ -23,6 +23,11 @@
     Debezium, a distributed open-source change data capture platform, can emit change data events [in the CloudEvents format](https://debezium.io/documentation/reference/integrations/cloudevents.html)
   url: https://debezium.io/
   logo: debezium.png
+- name: Google Cloud Eventarc
+  description: |
+    Eventarc is a managed infrastructure that allows you to build event-driven architectures with loosely coupled services that react to state changes.
+  url: https://cloud.google.com/eventarc/docs/
+  logo: googlecloud.png
 - name: Keptn
   description: |
     Keptn builds upon CloudEvents for continuous delivery and automated operations and has its [specification](https://github.com/keptn/spec) based on CloudEvents.
