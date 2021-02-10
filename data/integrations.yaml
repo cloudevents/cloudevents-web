@@ -3,6 +3,11 @@
     A serverless event bus that receives CloudEvents compliant events from cloud services, SaaS/custom apps, and routes to various targets
   url: https://www.aliyun.com/product/aliware/eventbridge
   logo: alibaba-cloud-eventbridge.png
+- name: Argo Events
+  description: |
+    Argo Events is a CloudEvents compliant event-driven workflow automation framework for Kubernetes
+  url: https://github.com/argoproj/argo-events
+  logo: argo-events.png
 - name: Azure Event Grid
   description: |
     Event Grid natively supports events in the [JSON implementation of CloudEvents v1.0](https://github.com/cloudevents/spec/blob/v1.0/json-format.md) and the [HTTP protocol binding](https://github.com/cloudevents/spec/blob/v1.0/http-protocol-binding.md)
