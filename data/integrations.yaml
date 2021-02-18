@@ -28,6 +28,11 @@
     Debezium, a distributed open-source change data capture platform, can emit change data events [in the CloudEvents format](https://debezium.io/documentation/reference/integrations/cloudevents.html)
   url: https://debezium.io/
   logo: debezium.png
+- name: Falco
+  description: |
+    Falco is a threat detection engine for Kubernetes that can emit cloud events for security policy violations at runtime.
+  url: https://falco.org
+  logo: falco.png 
 - name: Google Cloud Eventarc
   description: |
     Eventarc is a managed infrastructure that allows you to build event-driven architectures with loosely coupled services that react to state changes.
