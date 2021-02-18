@@ -78,3 +78,8 @@
     VMware Event Broker Appliance (VEBA) publishes CloudEvents for changes in a vSphere cluster.
   url: https://vmweventbroker.io/
   logo: veba.png
+  - name: Adobe I/O Events
+  description: |
+    Adobe I/O Events embrace event-driven architecture to streamline workflows, improve marketing performance, and more, by allowing developers to programmatically respond to user behavior, resulting in near real-time customer experiences that are targeted, effective and personalized.  
+  url: https://www.adobe.io/apis/experienceplatform/events.html
+  logo: adobeioeventslogo.jpg
