@@ -38,6 +38,11 @@
     Eventarc is a managed infrastructure that allows you to build event-driven architectures with loosely coupled services that react to state changes.
   url: https://cloud.google.com/eventarc/docs/
   logo: googlecloud.png
+- name: IBM Cloud Code Engine
+  description: |
+    Code Engine is a fully managed, serverless platform designed to run container images, batch jobs, or source code. Code Engine allows you to build event driven workloads that react to Cloud Events.
+  url: https://cloud.ibm.com/codeengine
+  logo: codeengine.svg
 - name: Keptn
   description: |
     Keptn builds upon CloudEvents for continuous delivery and automated operations and has its [specification](https://github.com/keptn/spec) based on CloudEvents.
