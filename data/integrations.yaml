@@ -28,6 +28,11 @@
     Debezium, a distributed open-source change data capture platform, can emit change data events [in the CloudEvents format](https://debezium.io/documentation/reference/integrations/cloudevents.html)
   url: https://debezium.io/
   logo: debezium.png
+- name: Direktiv
+  description: |
+    Direktiv, a serverless workflow engine, which can take in [cloud events](https://docs.direktiv.io/docs/events/events.html) to trigger workflows.
+  url: https://direktiv.io
+  logo: direktiv.png
 - name: Falco
   description: |
     Falco is a threat detection engine for Kubernetes that can emit cloud events for security policy violations at runtime.
