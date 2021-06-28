@@ -1,3 +1,8 @@
+- name: Tencent Cloud EventBridge
+  description: |
+    EventBridge is a secure, stable, and efficient serverless event management platform that supports Tencent Cloud services, custom applications, and SaaS applications are connected in a standardized and centralized manner.
+  url: https://cloud.tencent.com/product/eb
+  logo: tencentcloud-eventbridge.svg
 - name: Alibaba Cloud EventBridge
   description: |
     A serverless event bus that receives CloudEvents compliant events from cloud services, SaaS/custom apps, and routes to various targets
