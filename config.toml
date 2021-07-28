@@ -22,7 +22,7 @@ icon = "fas fa-code"
 
 [[params.why.tiles]]
 heading = "Accessibility"
-text = "No common event format means no common libraries, tooling, and infrastructure for delivering event data across environments. CloudEvents provides SDKs for [Go](https://github.com/cloudevents/sdk-go), [JavaScript](https://github.com/cloudevents/sdk-javascript), [Java](https://github.com/cloudevents/sdk-java), [C#](https://github.com/cloudevents/sdk-csharp), [Ruby](https://github.com/cloudevents/sdk-ruby), and [Python](https://github.com/cloudevents/sdk-python) that can be used to build event routers, tracing systems, and other tools."
+text = "No common event format means no common libraries, tooling, and infrastructure for delivering event data across environments. CloudEvents provides SDKs for [Go](https://github.com/cloudevents/sdk-go), [JavaScript](https://github.com/cloudevents/sdk-javascript), [Java](https://github.com/cloudevents/sdk-java), [C#](https://github.com/cloudevents/sdk-csharp), [Ruby](https://github.com/cloudevents/sdk-ruby), [PHP](https://github.com/cloudevents/sdk-php), [PHP](https://github.com/cloudevents/sdk-php), and [Python](https://github.com/cloudevents/sdk-python) that can be used to build event routers, tracing systems, and other tools."
 icon = "fas fa-universal-access"
 
 [[params.why.tiles]]
@@ -115,6 +115,10 @@ tag = "csharp"
 [[params.sdks]]
 name = "Ruby"
 tag = "ruby"
+
+[[params.sdks]]
+name = "PHP"
+tag = "php"
 
 [[params.sdks]]
 name = "Python"
