@@ -22,7 +22,7 @@ icon = "fas fa-code"
 
 [[params.why.tiles]]
 heading = "Accessibility"
-text = "No common event format means no common libraries, tooling, and infrastructure for delivering event data across environments. CloudEvents provides SDKs for [Go](https://github.com/cloudevents/sdk-go), [JavaScript](https://github.com/cloudevents/sdk-javascript), [Java](https://github.com/cloudevents/sdk-java), [C#](https://github.com/cloudevents/sdk-csharp), [Ruby](https://github.com/cloudevents/sdk-ruby), [PHP](https://github.com/cloudevents/sdk-php), and [Python](https://github.com/cloudevents/sdk-python) that can be used to build event routers, tracing systems, and other tools."
+text = "No common event format means no common libraries, tooling, and infrastructure for delivering event data across environments. CloudEvents provides SDKs for [Go](https://github.com/cloudevents/sdk-go), [JavaScript](https://github.com/cloudevents/sdk-javascript), [Java](https://github.com/cloudevents/sdk-java), [C#](https://github.com/cloudevents/sdk-csharp), [Ruby](https://github.com/cloudevents/sdk-ruby), [PHP](https://github.com/cloudevents/sdk-php), [PowerShell](https://github.com/cloudevents/sdk-powershell), [Rust](https://github.com/cloudevents/sdk-rust), and [Python](https://github.com/cloudevents/sdk-python) that can be used to build event routers, tracing systems, and other tools."
 icon = "fas fa-universal-access"
 
 [[params.why.tiles]]
@@ -51,7 +51,7 @@ On October 24, 2019 the CloudEvents project had two significant achievements. Fi
 
 This is the first major release of the specification and represents two years' worth of hard work by a truly great team of people from across the entire serverless community. We've had just about every major cloud provider participate, several "end user" companies as well as many individual participants all working diligently on producing a specification that will hopefully continue to see increased adoption now that this milestone has been reached.
 
-Aside from the [core CloudEvents specification](https://github.com/cloudevents/spec/blob/v1.0/spec.md), there's also the [Primer](https://github.com/cloudevents/spec/blob/v1.0/primer.md) and protocol and format specifications, all of which can be found in the [GitHub repo](https://github.com/cloudevents/spec). Additionally, there are six different [SDKs](https://github.com/cloudevents/spec#sdks)—[Go](https://github.com/cloudevents/sdk-go), [JavaScript](https://github.com/cloudevents/sdk-javascript), [Java](https://github.com/cloudevents/sdk-java), [C#](https://github.com/cloudevents/sdk-csharp), [Ruby](https://github.com/cloudevents/sdk-ruby), [PHP](https://github.com/cloudevents/sdk-php), and [Python](https://github.com/cloudevents/sdk-python)—to help people produce and consume CloudEvents.
+Aside from the [core CloudEvents specification](https://github.com/cloudevents/spec/blob/v1.0/spec.md), there's also the [Primer](https://github.com/cloudevents/spec/blob/v1.0/primer.md) and protocol and format specifications, all of which can be found in the [GitHub repo](https://github.com/cloudevents/spec). Additionally, there are many [SDKs](https://github.com/cloudevents/spec#sdks)—[Go](https://github.com/cloudevents/sdk-go), [JavaScript](https://github.com/cloudevents/sdk-javascript), [Java](https://github.com/cloudevents/sdk-java), [C#](https://github.com/cloudevents/sdk-csharp), [Ruby](https://github.com/cloudevents/sdk-ruby), [PHP](https://github.com/cloudevents/sdk-php), [PowerShell](https://github.com/cloudevents/sdk-powershell), [Rust](https://github.com/cloudevents/sdk-rust), and [Python](https://github.com/cloudevents/sdk-python)—to help people produce and consume CloudEvents.
 
 The CNCF Serverless Working Group will be deciding what to focus on next (e.g. additional CloudEvents related activities, or perhaps address some other interoperability pain-point the community is experiencing). So, if you're interested please join the regular [weekly calls](https://github.com/cloudevents/spec#meeting-time). Additionally, there is the work being done on the [workflow specification](https://github.com/serverlessworkflow/specification/blob/master/specification.md).
 
@@ -127,6 +127,10 @@ tag = "python"
 [[params.sdks]]
 name = "Rust"
 tag = "rust"
+
+[[params.sdks]]
+name = "PowerShell"
+tag = "powershell"
 
 [[params.social]]
 tag = "github"
