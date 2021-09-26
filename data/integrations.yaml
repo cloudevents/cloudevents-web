@@ -83,6 +83,11 @@
     All event definitions in the Serverless Workflow JSON/YAML model are CloudEvents compliant
   url: https://serverlessworkflow.io
   logo: sw-logo.png
+- name: Tencent Cloud EventBridge
+  description: |
+    EventBridge is a secure, stable, and efficient serverless event management platform that supports Tencent Cloud services, custom applications, and SaaS applications are connected in a standardized and centralized manner.
+  url: https://cloud.tencent.com/product/eb
+  logo: tencentcloud-eventbridge.svg
 - name: Tekton Pipelines
   description: |
     Tekton is a cloud native framework for creating CI/CD systems that can emit cloud events as pipelines and tasks execute.
