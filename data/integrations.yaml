@@ -98,3 +98,8 @@
     VMware Event Broker Appliance (VEBA) publishes CloudEvents for changes in a vSphere cluster.
   url: https://vmweventbroker.io/
   logo: veba.png
+- name: wasmCloud
+  url: https://wasmcloud.dev
+  description: |
+    wasmCloud, a cloud native WebAssembly host runtime (CNCF), uses CloudEvents for all event publication and monitoring on its control interface.
+  logo: wasmcloud.png
