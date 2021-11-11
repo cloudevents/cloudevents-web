@@ -70,7 +70,7 @@ weight = 1
 
 [[menus.main]]
 name = "Primer"
-url = "https://github.com/cloudevents/spec/blob/master/primer.md"
+url = "https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md"
 weight = 2
 
 [[menus.main]]
