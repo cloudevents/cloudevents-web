@@ -32,7 +32,7 @@ icon = "far fa-gem"
 
 [params.what]
 text = """
-CloudEvents is a [specification](https://github.com/cloudevents/spec/blob/master/spec.md) for describing event data in a common way. CloudEvents seeks to dramatically simplify event declaration and delivery across services, platforms, and beyond!
+CloudEvents is a [specification](https://github.com/cloudevents/spec/) for describing event data in a common way. CloudEvents seeks to dramatically simplify event declaration and delivery across services, platforms, and beyond!
 
 CloudEvents is a new effort and it's still under active development. However, its working group has received a surprising amount of industry interest, ranging from major cloud providers to popular SaaS companies. The specification is now under the [Cloud Native Computing Foundation](https://cncf.io).
 """
