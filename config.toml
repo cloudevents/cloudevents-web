@@ -43,8 +43,16 @@ CloudEvents is organized via the CNCF's [Serverless Working Group](https://githu
 """
 
 [params.release]
+textv102 = """
+On February 5, 2022 the CloudEvents project released v1.0.2 of its specifications. Aside from minor clarifications to the specifications, there were a few noteworthy additions made to the set of deliverables:
+- a new Powershell SDK was introduced
+- batching support was added to the Protobuf format
+- work was started to translate the specifications to Chinese
+
+See the [release notes](https://github.com/cloudevents/spec/releases/tag/v1.0.2) for more details. Additionally, the 'specs' github repository was reorganized to accommodate the newer specifications that are under development. Note that this release is compatible with the existing CloudEvents v1.0 specification.
+"""
 textv101 = """
-On Decemeber 10, 2020 the CloudEvents project release v1.0.1 of its specifications. This release addresses several clarifications to the v1.0 specification, as well as adding some new features such as a WebSocket protocol binding. Please see the [release note](https://github.com/cloudevents/spec/releases/tag/v1.0.1) for the complete list of changes. Note that this release is compatible with the existing CloudEvents v1.0 specification.
+On Decemeber 10, 2020 the CloudEvents project released v1.0.1 of its specifications. This release addresses several clarifications to the v1.0 specification, as well as adding some new features such as a WebSocket protocol binding. Please see the [release note](https://github.com/cloudevents/spec/releases/tag/v1.0.1) for the complete list of changes. Note that this release is compatible with the existing CloudEvents v1.0 specification.
 """
 textv100 = """
 On October 24, 2019 the CloudEvents project had two significant achievements. First, the CNCF's [Technical Oversight Committee](https://github.com/cncf/toc) approved the project as an "incubator" project (thus graduating it from the CNCF "sandbox"). Second, the CloudEvents specification released version 1.0!

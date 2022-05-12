@@ -1,7 +1,18 @@
+{{ $textv102 := site.Params.release.textv102 | markdownify }}
 {{ $textv101 := site.Params.release.textv101 | markdownify }}
 {{ $textv100 := site.Params.release.textv100 | markdownify }}
 <section class="section">
   <div class="container">
+    <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
+      CloudEvents 1.0.2 release
+    </p>
+
+    <hr class="thick" />
+
+    <div class="content is-size-5 is-size-6-mobile">
+      {{ $textv102 }}
+    </div>
+
     <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
       CloudEvents 1.0.1 release
     </p>
