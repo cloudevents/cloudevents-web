@@ -1,3 +1,8 @@
+- name: Adobe I/O Events
+  description: |
+    Adobe I/O Events embrace event-driven architecture to streamline workflows, improve marketing performance, and more, by allowing developers to programmatically respond to user behavior, resulting in near real-time customer experiences that are targeted, effective and personalized.
+  url: https://www.adobe.io/apis/experienceplatform/events.html
+  logo: adobeioeventslogo.jpg
 - name: Alibaba Cloud EventBridge
   description: |
     A serverless event bus that receives CloudEvents compliant events from cloud services, SaaS/custom apps, and routes to various targets
@@ -88,6 +93,11 @@
     Tekton is a cloud native framework for creating CI/CD systems that can emit cloud events as pipelines and tasks execute.
   url: https://tekton.dev
   logo: tekton.png
+- name: Tencent Cloud EventBridge
+  description: |
+    EventBridge is a secure, stable, and efficient serverless event management platform that supports Tencent Cloud services, custom applications, and SaaS applications are connected in a standardized and centralized manner.
+  url: https://cloud.tencent.com/product/eb
+  logo: tencentcloud-eventbridge.svg
 - name: TriggerMesh
   description: |
     TriggerMesh makes use of CloudEvents in all its event sources and targets to build application flows.
