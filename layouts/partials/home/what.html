@@ -1,12 +1,13 @@
-{{ $what := site.Params.what.text | markdownify }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $what := $data.params.what  }}
 <div class="column">
   <p class="title is-size-3 is-size-4-mobile has-text-white-bis has-text-weight-light">
-    What is CloudEvents?
+    {{ $what.title | markdownify }}
   </p>
 
   <hr class="thick" />
 
   <div class="content is-size-5 is-size-6-mobile has-text-grey-light">
-    {{ $what }}
+    {{ $what.text | markdownify }}
   </div>
 </div>

@@ -1,5 +1,6 @@
 {{ $logo := printf "img/logos/%s" site.Params.logos.hero | relURL }}
-{{ $desc := site.Params.description }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $desc := $data.params.description }}
 <section class="hero is-black is-medium" id="home-hero">
   <div class="container">
     <div class="hero-body">

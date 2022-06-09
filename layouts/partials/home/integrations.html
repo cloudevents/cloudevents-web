@@ -1,8 +1,8 @@
-{{ $integrations := site.Data.integrations }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
 <section class="section has-background-light">
   <div class="container">
     <p class="title is-size-3 is-size-4-mobile has-text-weight-light is-spaced">
-      Integrations
+      {{ $data.params.integrations }}
     </p>
 
     <hr class="thick" />
@@ -10,7 +10,7 @@
     <br />
 
     <div class="columns is-multiline">
-      {{ range $integrations }}
+      {{ range $data.integrations }}
       {{ $logo := printf "img/logos/integrations/%s" .logo | relURL }}
       {{ $alt  := printf "%s logo" .name }}
       <div class="column is-one-third">
