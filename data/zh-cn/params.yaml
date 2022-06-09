@@ -1,0 +1,61 @@
+description: "一个以通用格式来描述事件数据的规范"
+why:
+  whyTitle: "为何选择 CloudEvents？"
+  heading: "事件在现代系统中无处不在，但不同的事件生产者往往用不同的规范来描述自己的事件。"
+  tiles:
+    - heading: "一致性"
+      text: "对事件的统一描述的缺乏意味着开发者必须为每个事件源写单独的事件处理逻辑。"
+      icon: "fas fa-code"
+    - heading: "可达性"
+      text: "缺乏统一的事件格式意味着缺失能够跨环境传输事件数据的公共库、工具以及基础设施。CloudEvents 针对不同编程语言，提供了能用来构建事件路由、事件追踪和其它工具的多款 SDKs 包括 [Go](https://github.com/cloudevents/sdk-go)、 [JavaScript](https://github.com/cloudevents/sdk-javascript)、 [Java](https://github.com/cloudevents/sdk-java)、 [C#](https://github.com/cloudevents/sdk-csharp)、 [Ruby](https://github.com/cloudevents/sdk-ruby)、[PHP](https://github.com/cloudevents/sdk-php)、[PowerShell](https://github.com/cloudevents/sdk-powershell)、[Rust](https://github.com/cloudevents/sdk-rust)、 以及 [Python](https://github.com/cloudevents/sdk-python) 。"
+      icon: "fas fa-universal-access"
+    - heading: "可移植性"
+      text: "总体来看，这种对事件的统一描述的缺乏严重阻碍了事件数据的可移植性和生产力。"
+      icon: "far fa-gem"
+what:
+  title: "什么是 CloudEvents?"
+  text: "
+CloudEvents 是一个以通用格式来描述事件数据的 [规范](https://github.com/cloudevents/spec/blob/main/cloudevents/languages/zh-CN/spec.md)。 它旨在简化不同服务、平台间的事件声明和传输。
+
+
+CloudEvents 是一个全新且活跃的尝试。 但它的工作组已经被各大云厂商和 SaaS 公司广泛关注。 目前 CloudEvents 已捐献至 [云原生基金会](https://cncf.io)。
+"
+contribute:
+  title: "贡献 CloudEvents 项目"
+  text: "CloudEvents 由云原生基金会的[Serverless 工作组](https://github.com/cncf/wg-serverless)发起，诚邀各位的加入。 如果你希望对此项目进行贡献, 可以在 [CloudEvents Github 组织](https://github.com/cloudevents) 与我们合作， 或是参加每周 [太平洋时间 早上9点](https://www.thetimezoneconverter.com/?t=9:00am&tz=San%20Francisco) 的 [Zoom会议](https://zoom.us/my/cncfserverlesswg), 以及查看 [会议记录](https://docs.google.com/document/d/1OVF68rpuPK5shIHILK9JOqlZBbfe91RNzQ7u_P7YCDE)。 通过 [此文档](https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md)来更多地了解我们。"
+releases:
+  - title: "CloudEvents 1.0.2 版本"
+    text: "2022 年 2 月 5 日，CloudEvents 项目发布了v1.0.2 版本的规范。 除了对规格的细微说明外，此版本还增加了以下值得注意的内容：
+
+- 引入了新的 Powershell SDK
+
+- 新增了 Protobuf 格式的批处理功能
+
+- CloudEvents 的中文翻译正在进行中
+
+
+更多详细信息，请参阅[发行说明](https://github.com/cloudevents/spec/releases/tag/v1.0.2)。 此外，我们重新调整了 “specs” 仓库的目录结构，以适应正在开发的新规范。 请注意，此版本与现有 CloudEvents v1.0 规范兼容。
+"
+  - title: "CloudEvents 1.0.1 版本"
+    text: "2020 年 12 月 10 日，CloudEvents 项目发布了v1.0.1 版本的规范。 此版本对 v1.0 规范的某些内容进行了一些解释，并添加了一些新功能，例如 WebSocket 的协议绑定。 有关更改的完整列表，请参阅[发行说明](https://github.com/cloudevents/spec/releases/tag/v1.0.1)。 请注意，此版本与现有 CloudEvents v1.0 规范兼容。"
+  - title: "CloudEvents 1.0 版本"
+    text: "2019 年 10 月 24 日，CloudEvents 项目取得了两项重大成就。首先，CNCF 的[技术监督委员会](https://github.com/cncf/toc)将该项目批准为“孵化”项目（正式从 CNCF“沙盒”中毕业）。其次，CloudEvents规范发布 1.0版本！
+
+
+  这是本规范的第一个大版本，代表了整个 serverless 社区团队两年来的辛勤工作。几乎所有主要的云厂商，一些“终端用户”公司以及许多个人都参与到了规范的制定，希望本规范在这一里程碑后继续能被越来越多的用户采用。
+
+
+  除了 CloudEvents [核心规范](https://github.com/cloudevents/spec/blob/v1.0/spec.md)外，还有入门文档以及协议和格式的相关规范被制定出来，这些文件都可以在 GitHub 仓库中找到。 此外，工作组还开发了许多 SDK（Go、JavaScript、Java、C#、Ruby、PHP、PowerShell、Rust 和 Python）来帮助人们生产和使用 CloudEvents。
+
+
+  CNCF Serverless 工作组将决定本规范的下一步重点内容（例如，其它与 CloudEvents 相关的活动，或者可能解决社区正在经历的其它互操作性痛点）。 因此，如果您有兴趣，请加入每周定期[线上会议](https://github.com/cloudevents/spec#meeting-time)。 此外，我们还在做一些关于 [workflow 规范](https://github.com/serverlessworkflow/specification/blob/master/specification.md)的制定工作。
+
+
+  感谢并祝贺每位参与到 CloudEvents 项目的人！
+"
+integrations: "CloudEvents 规范采纳者"
+resources:    "资源"
+videos:       "视频"
+title:        "标题"
+speakers:     "演讲者"
+event:        "活动"
