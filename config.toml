@@ -1,10 +1,9 @@
 title = "CloudEvents"
 baseURL = "/"
-languageCode = "en-us"
+
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-description = "A specification for describing event data in a common way"
 font_awesome_version = "5.11.2"
 
 [params.logos]
@@ -12,97 +11,10 @@ navbar = "cloudevents-icon-color.png"
 hero = "cloudevents-icon-color.png"
 footer = "cloudevents-icon-color.png"
 
-[params.why]
-heading = "Events are everywhere, yet event publishers tend to describe events differently."
-
-[[params.why.tiles]]
-heading = "Consistency"
-text = "The lack of a common way of describing events means developers have to write new event handling logic for each event source."
-icon = "fas fa-code"
-
-[[params.why.tiles]]
-heading = "Accessibility"
-text = "No common event format means no common libraries, tooling, and infrastructure for delivering event data across environments. CloudEvents provides SDKs for [Go](https://github.com/cloudevents/sdk-go), [JavaScript](https://github.com/cloudevents/sdk-javascript), [Java](https://github.com/cloudevents/sdk-java), [C#](https://github.com/cloudevents/sdk-csharp), [Ruby](https://github.com/cloudevents/sdk-ruby), [PHP](https://github.com/cloudevents/sdk-php), [PowerShell](https://github.com/cloudevents/sdk-powershell), [Rust](https://github.com/cloudevents/sdk-rust), and [Python](https://github.com/cloudevents/sdk-python) that can be used to build event routers, tracing systems, and other tools."
-icon = "fas fa-universal-access"
-
-[[params.why.tiles]]
-heading = "Portability"
-text = "The portability and productivity we can achieve from event data is hindered overall."
-icon = "far fa-gem"
-
-[params.what]
-text = """
-CloudEvents is a [specification](https://github.com/cloudevents/spec/blob/v1.0.1/spec.md) for describing event data in a common way. CloudEvents seeks to dramatically simplify event declaration and delivery across services, platforms, and beyond!
-
-CloudEvents is a new effort and it's still under active development. However, its working group has received a surprising amount of industry interest, ranging from major cloud providers to popular SaaS companies. The specification is now under the [Cloud Native Computing Foundation](https://cncf.io).
-"""
-
-[params.contribute]
-text = """
-CloudEvents is organized via the CNCF's [Serverless Working Group](https://github.com/cncf/wg-serverless) and everyone is encouraged to join us. If you're interested in contributing, please collaborate with us in the [CloudEvents Github org](https://github.com/cloudevents), join our weekly call every Thursday at [9AM PT](https://www.thetimezoneconverter.com/?t=9:00am&tz=San%20Francisco) via [Zoom](https://zoom.us/my/cncfserverlesswg), check the [meeting notes](https://docs.google.com/document/d/1OVF68rpuPK5shIHILK9JOqlZBbfe91RNzQ7u_P7YCDE), and review our [Governance](https://github.com/cloudevents/spec/blob/master/community/GOVERNANCE.md) model to familiarize yourself with our process.
-"""
-
-[params.release]
-textv102 = """
-On February 5, 2022 the CloudEvents project released v1.0.2 of its specifications. Aside from minor clarifications to the specifications, there were a few noteworthy additions made to the set of deliverables:
-- a new Powershell SDK was introduced
-- batching support was added to the Protobuf format
-- work was started to translate the specifications to Chinese
-
-See the [release notes](https://github.com/cloudevents/spec/releases/tag/v1.0.2) for more details. Additionally, the 'specs' github repository was reorganized to accommodate the newer specifications that are under development. Note that this release is compatible with the existing CloudEvents v1.0 specification.
-"""
-textv101 = """
-On Decemeber 10, 2020 the CloudEvents project released v1.0.1 of its specifications. This release addresses several clarifications to the v1.0 specification, as well as adding some new features such as a WebSocket protocol binding. Please see the [release note](https://github.com/cloudevents/spec/releases/tag/v1.0.1) for the complete list of changes. Note that this release is compatible with the existing CloudEvents v1.0 specification.
-"""
-textv100 = """
-On October 24, 2019 the CloudEvents project had two significant achievements. First, the CNCF's [Technical Oversight Committee](https://github.com/cncf/toc) approved the project as an "incubator" project (thus graduating it from the CNCF "sandbox"). Second, the CloudEvents specification released version 1.0!
-
-This is the first major release of the specification and represents two years' worth of hard work by a truly great team of people from across the entire serverless community. We've had just about every major cloud provider participate, several "end user" companies as well as many individual participants all working diligently on producing a specification that will hopefully continue to see increased adoption now that this milestone has been reached.
-
-Aside from the [core CloudEvents specification](https://github.com/cloudevents/spec/blob/v1.0/spec.md), there's also the [Primer](https://github.com/cloudevents/spec/blob/v1.0/primer.md) and protocol and format specifications, all of which can be found in the [GitHub repo](https://github.com/cloudevents/spec). Additionally, there are many [SDKs](https://github.com/cloudevents/spec#sdks)—[Go](https://github.com/cloudevents/sdk-go), [JavaScript](https://github.com/cloudevents/sdk-javascript), [Java](https://github.com/cloudevents/sdk-java), [C#](https://github.com/cloudevents/sdk-csharp), [Ruby](https://github.com/cloudevents/sdk-ruby), [PHP](https://github.com/cloudevents/sdk-php), [PowerShell](https://github.com/cloudevents/sdk-powershell), [Rust](https://github.com/cloudevents/sdk-rust), and [Python](https://github.com/cloudevents/sdk-python)—to help people produce and consume CloudEvents.
-
-The CNCF Serverless Working Group will be deciding what to focus on next (e.g. additional CloudEvents related activities, or perhaps address some other interoperability pain-point the community is experiencing). So, if you're interested please join the regular [weekly calls](https://github.com/cloudevents/spec#meeting-time). Additionally, there is the work being done on the [workflow specification](https://github.com/serverlessworkflow/specification/blob/master/specification.md).
-
-Thanks and congratulations to everyone who has participated in the CloudEvents project! 
-"""
-
 [[params.fonts]]
 name = "Montserrat"
 sizes = [300, 400, 600, 700]
 type = "sans_serif"
-
-[[menus.main]]
-name = "Specification"
-url = "https://github.com/cloudevents/spec"
-weight = 1
-
-[[menus.main]]
-name = "Primer"
-url = "https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md"
-weight = 2
-
-[[menus.main]]
-identifier = "project"
-name = "Project"
-weight = 3
-
-[[menus.main]]
-name = "Code of conduct"
-url = "https://github.com/cncf/foundation/blob/main/code-of-conduct.md"
-parent = "project"
-weight = 1
-
-[[menus.main]]
-name = "Governance"
-url = "https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md"
-parent = "project"
-weight = 2
-
-[[menus.main]]
-name = "Contributors"
-url = "https://github.com/cloudevents/spec/blob/main/docs/contributors.md"
-parent = "project"
-weight = 3
 
 [[params.sdks]]
 name = "Go"
@@ -151,3 +63,79 @@ tag = "twitter"
 name = "Twitter"
 url = "https://twitter.com/CloudEventsIO"
 color = "twitter-blue"
+
+# Multilingual
+[languages]
+[languages.en]
+weight = 1
+languageCode = "en"
+languageName = "English"
+
+[[languages.en.menus.main]]
+name = "Specification"
+url = "https://github.com/cloudevents/spec"
+weight = 1
+
+[[languages.en.menus.main]]
+name = "Primer"
+url = "https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md"
+weight = 2
+
+[[languages.en.menus.main]]
+identifier = "project"
+name = "Project"
+weight = 3
+
+[[languages.en.menus.main]]
+name = "Code of conduct"
+url = "https://github.com/cncf/foundation/blob/main/code-of-conduct.md"
+parent = "project"
+weight = 1
+
+[[languages.en.menus.main]]
+name = "Governance"
+url = "https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md"
+parent = "project"
+weight = 2
+
+[[languages.en.menus.main]]
+name = "Contributors"
+url = "https://github.com/cloudevents/spec/blob/main/docs/contributors.md"
+parent = "project"
+weight = 3
+
+[languages.zh-cn]
+weight = 2
+languageCode = "zh-CN"
+languageName = "简体中文"
+hasCJKLanguage = true
+
+[[languages.zh-cn.menus.main]]
+name = "规范"
+url = "https://github.com/cloudevents/spec"
+weight = 1
+[[languages.zh-cn.menus.main]]
+name = "入门文档"
+url = "https://github.com/cloudevents/spec/blob/main/cloudevents/languages/zh-CN/primer.md"
+weight = 2
+[[languages.zh-cn.menus.main]]
+identifier = "project"
+name = "项目"
+weight = 3
+[[languages.zh-cn.menus.main]]
+name = "行为准则"
+url = "https://github.com/cncf/foundation/blob/main/code-of-conduct-languages/zh.md"
+parent = "project"
+weight = 1
+
+[[languages.zh-cn.menus.main]]
+name = "管理"
+url = "https://github.com/cloudevents/spec/blob/main/docs/languages/zh-CN/GOVERNANCE.md"
+parent = "project"
+weight = 2
+
+[[languages.zh-cn.menus.main]]
+name = "贡献者"
+url = "https://github.com/cloudevents/spec/blob/main/docs/languages/zh-CN/contributors.md"
+parent = "project"
+weight = 3
