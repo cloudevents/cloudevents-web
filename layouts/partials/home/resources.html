@@ -1,9 +1,10 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
 {{ $resources := site.Data.resources }}
 {{ $videos    := $resources.videos }}
 <section class="section">
   <div class="container">
     <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
-      Resources
+      {{ $data.params.resources }}
     </p>
 
     <hr class="thick" />
@@ -11,20 +12,20 @@
     <div class="columns is-variable is-8">
       <div class="column">
         <p class="title is-size-4 is-size-5-mobile">
-          Videos
+          {{ $data.params.videos }}
         </p>
 
         <table class="table is-medium">
           <thead>
             <tr>
               <th>
-                Title
+                {{ $data.params.title }}
               </th>
               <th>
-                Speakers
+                {{ $data.params.speakers }}
               </th>
               <th>
-                Event
+                {{ $data.params.event }}
               </th>
             </tr>
           </thead>
