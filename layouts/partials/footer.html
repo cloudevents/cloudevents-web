@@ -1,10 +1,11 @@
 {{ $logo   := printf "img/logos/%s" site.Params.logos.footer | relURL }}
-{{ $desc   := site.Params.description }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $desc := $data.params.description }}
 {{ $year   := now.Year }}
 {{ $sdks   := site.Params.sdks }}
 {{ $menu   := site.Menus.main }}
 {{ $social := site.Params.social }}
-{{ $integ  := site.Data.integrations }}
+{{ $integ  := $data.integrations }}
 <footer class="footer">
   <div class="container">
     <div class="columns">

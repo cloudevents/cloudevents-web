@@ -1,10 +1,11 @@
-{{ $why     := site.Params.why }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $why     := $data.params.why }}
 {{ $heading := $why.heading }}
 {{ $tiles   := $why.tiles }}
 <section class="section has-background-white-bis">
   <div class="container">
     <p class="title is-size-3 is-size-4-mobile has-text-weight-light is-spaced">
-      Why CloudEvents?
+      {{ $why.whyTitle }}
     </p>
 
     <hr class="thick" />

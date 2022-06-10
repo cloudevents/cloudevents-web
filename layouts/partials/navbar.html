@@ -76,7 +76,7 @@
             {{ $link := printf "https://github.com/cloudevents/sdk-%s" .tag }}
             <a class="navbar-item" href="{{ $link }}" target="_blank">
               {{ .name }}
-              &nbsp;
+
               <sup>
                 <span class="icon is-small has-text-primary">
                   <i class="fas fa-xs fa-external-link-alt"></i>
@@ -86,6 +86,33 @@
             {{ end }}
           </div>
         </div>
+
+        {{- if .Site.IsMultiLingual -}}
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            {{- .Language.LanguageName -}}
+          </a>
+          {{- $currentLan := .Language.LanguageName -}}
+          <div class="navbar-dropdown is-right">
+            {{- range .AllTranslations -}}
+              {{ if not (eq  .Language.LanguageName $currentLan) }}
+              <a class="navbar-item"  href={{ .RelPermalink }} >
+                {{- .Language.LanguageName -}}
+              </a>
+              {{ end }}
+            {{ end }}
+          </div>
+
+          <!--<div class="select" id="language-select-desktop" onchange="location = this.value;">
+            <select>
+              <option>{{- .Language.LanguageName -}} </option>
+              <option>With options</option>
+            </select>
+          </div>-->
+
+
+        </div>
+        {{- end -}}
 
         {{ if $posts }}
         <a class="navbar-item" href="/blog">

@@ -1,0 +1,115 @@
+- name: Adobe I/O 事件
+  description: |
+    Adobe I/O Events 采用事件驱动架构来简化工作流程、提高营销绩效等，它允许开发人员以编程方式响应用户行为，从而产生具有针对性、有效和个性化的近乎实时的客户体验。
+  url: https://www.adobe.io/apis/experienceplatform/events.html
+  logo: adobeioeventslogo.jpg
+- name: 阿里云事件总线
+  description: |
+    一款 serverless 的事件总线，支持从云服务、SaaS及自定义应用程序接收符合 CloudEvents 的事件，并将这些事件路由到不同目标。
+  url: https://www.aliyun.com/product/aliware/eventbridge
+  logo: alibaba-cloud-eventbridge.png
+- name: Argo 事件
+  description: |
+    Argo Events 是一个基于 Kubernetes 事件驱动自动化工作流框架，它的事件符合 CloudEvents 规范要求。
+  url: https://github.com/argoproj/argo-events
+  logo: argo-events.png
+- name: Azure 事件网格
+  description: |
+    事件网格原生支持 CloudEvents v1.0 中的 [JSON 实现](https://github.com/cloudevents/spec/blob/v1.0/json-format.md)和 [HTTP 协议绑定](https://github.com/cloudevents/spec/blob/v1.0/http-protocol-binding.md)。
+  url: https://azure.microsoft.com/en-us/services/event-grid
+  logo: event-grid.png
+- name: Choria
+  description: |
+    Choria 编排系统生产的所有生命周期和自治代理事件都符合 CloudEvents 规范要求。
+  url: https://choria.io/blog/post/2019/12/05/cloudevents_transition
+  logo: choria.png
+- name: commercetools
+  description: |
+    commercetools 平台的所有服务都可以发出符合 CloudEvents 的事件
+  url: https://www.commercetools.com
+  logo: commercetools.png
+- name: Debezium
+  description: |
+    Debezium 是一个分布式开源的数据变更捕获平台，它能以 [CloudEvents 格式](https://debezium.io/documentation/reference/integrations/cloudevents.html)发出数据变更的事件
+  url: https://debezium.io/
+  logo: debezium.png
+- name: Direktiv
+  description: |
+    Direktiv，一个 serverless 的工作流引擎，可以接收 [Cloud Events](https://docs.direktiv.io/docs/events/events.html) 来触发工作流。
+  url: https://direktiv.io
+  logo: direktiv.png
+- name: Falco
+  description: |
+    Falco 是基于 Kubernetes 的威胁检测引擎，可以在运行时根据违反安全策略的事件发出 Cloud Events。
+  url: https://falco.org
+  logo: falco.png 
+- name: Google Cloud Eventarc
+  description: |
+    Eventarc 是一个托管基础架构，它允许您使用松耦合的服务构建事件驱动的架构，这些服务随时可以响应状态变化。
+  url: https://cloud.google.com/eventarc/docs/
+  logo: googlecloud.png
+- name: IBM Cloud 代码引擎
+  description: |
+    Code Engine 是一个完全托管的 serverless 平台，旨在运行容器映像、批处理作业或源代码。 Code Engine 允许您构建能响应 Cloud Events 的事件驱动型工作负载。
+  url: https://cloud.ibm.com/codeengine
+  logo: codeengine.svg
+- name: Keptn
+  description: |
+    Keptn 基于 CloudEvents 构建以实现持续交付和自动化操作，并且它的[规范](https://github.com/keptn/spec) 同样基于 CloudEvents。
+  url: https://keptn.sh
+  logo: keptn.png
+- name: Knative Eventing
+  description: |
+    Knative Eventing 服务产生和使用的所有事件数据都符合 CloudEvents 规范。
+  url: https://knative.dev/docs/eventing/
+  logo: knative.png
+- name: Kogito
+  description: |
+    Kogito 业务自动化应用程序发出和使用的所有事件都符合 CloudEvents 规范。
+  url: https://kogito.kie.org/
+  logo: kogito-logo.png
+- name: OpenFaaS
+  description: |
+    OpenFaaS 函数支持 CloudEvent 事件触发。
+  url: https://docs.openfaas.com/reference/triggers/#cloudevents
+  logo: openfaas.svg
+- name: Oracle Cloud
+  description: |
+    Oracle 云基础设施事件服务实现了 CloudEvents。
+  url: https://blogs.oracle.com/cloud-infrastructure/track-and-react-to-cloud-native-events
+  logo: oracle.png
+- name: Serverless.com 事件网关
+  description: |
+    函数从事件网关接收的所有事件数据都符合 CloudEvents 规范。
+  url: https://github.com/serverless/event-gateway
+  logo: serverless-event-gateway.png
+- name: Serverless Workflow
+  description: |
+    Serverless 工作流 JSON/YAML 模型中的所有事件定义都符合 CloudEvents 规范。
+  url: https://serverlessworkflow.io
+  logo: sw-logo.png
+- name: Tekton 管道
+  description: |
+    Tekton 是一个云原生框架，用于创建 CI/CD 系统，可以在管道和任务执行时发出 CloudEvents。
+  url: https://tekton.dev
+  logo: tekton.png
+- name: 腾讯云事件总线
+  description: |
+    事件总线是一个安全、稳定、高效的 Serverless 事件管理平台，支持腾讯云服务、自定义应用、SaaS 应用以标准化、集中化的方式连接。
+  url: https://cloud.tencent.com/product/eb
+  logo: tencentcloud-eventbridge.svg
+- name: TriggerMesh
+  description: |
+    TriggerMesh 在其所有事件源和目标中使用 CloudEvents 来构建应用程序流。
+  url: https://www.triggermesh.com
+  logo: triggermesh.png
+- name: VMware Event Broker Appliance
+  description: |
+    VMware Event Broker Appliance (VEBA) 针对 vSphere 集群中的更改发布 CloudEvents。
+  url: https://vmweventbroker.io/
+  logo: veba.png
+- name: wasmCloud
+  url: https://wasmcloud.dev
+  description: |
+    wasmCloud 是一个云原生的 WebAssembly 主机运行时 (CNCF项目)，它使用 CloudEvents 在其控制界面上进行所有事件的发布和监控。
+  logo: wasmcloud.png

@@ -1,36 +1,16 @@
-{{ $textv102 := site.Params.release.textv102 | markdownify }}
-{{ $textv101 := site.Params.release.textv101 | markdownify }}
-{{ $textv100 := site.Params.release.textv100 | markdownify }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $releases := $data.params.releases  }}
 <section class="section">
   <div class="container">
-    <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
-      CloudEvents 1.0.2 release
-    </p>
+    {{ range $releases }}
+      <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
+        {{ .title }}
+      </p>
+      <hr class="thick" />
 
-    <hr class="thick" />
-
-    <div class="content is-size-5 is-size-6-mobile">
-      {{ $textv102 }}
-    </div>
-
-    <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
-      CloudEvents 1.0.1 release
-    </p>
-
-    <hr class="thick" />
-
-    <div class="content is-size-5 is-size-6-mobile">
-      {{ $textv101 }}
-    </div>
-
-    <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
-      CloudEvents 1.0 release
-    </p>
-
-    <hr class="thick" />
-
-    <div class="content is-size-5 is-size-6-mobile">
-      {{ $textv100 }}
-    </div>
+      <div class="content is-size-5 is-size-6-mobile">
+        {{ .text | markdownify }}
+      </div>
+    {{ end }}
   </div>
 </section>
