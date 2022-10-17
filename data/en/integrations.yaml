@@ -43,6 +43,11 @@
     Falco is a threat detection engine for Kubernetes that can emit cloud events for security policy violations at runtime.
   url: https://falco.org
   logo: falco.png
+- name: Golioth
+  url: https://golioth.io/
+  logo: golioth.svg
+  description: |
+    Golioth is an IoT device management platform that uses CloudEvents for handling events coming from IoT-specific protocol gateways to internal services. Golioth also publishes IoT data "Output Streams" as CloudEvents.
 - name: Google Cloud Eventarc
   description: |
     Eventarc is a managed infrastructure that allows you to build event-driven architectures with loosely coupled services that react to state changes.
@@ -113,8 +118,3 @@
   description: |
     wasmCloud, a cloud native WebAssembly host runtime (CNCF), uses CloudEvents for all event publication and monitoring on its control interface.
   logo: wasmcloud.png
-- name: Golioth
-  url: https://golioth.io/
-  logo: golioth.svg
-  description: |
-    Golioth is an IoT device management platform that uses CloudEvents for handling events coming from IoT-specific protocol gateways to internal services. Golioth also publishes IoT data "Output Streams" as CloudEvents.
