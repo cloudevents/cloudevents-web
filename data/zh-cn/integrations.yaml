@@ -38,9 +38,14 @@
     Direktiv，一个 serverless 的工作流引擎，可以接收 [Cloud Events](https://docs.direktiv.io/docs/events/events.html) 来触发工作流。
   url: https://direktiv.io
   logo: direktiv.png
+- name: European Commission
+  description: |
+    CloudEvents 校验服务。
+  url: https://joinup.ec.europa.eu/collection/interoperability-test-bed-repository/solution/cloudeventsvalidator
+  logo: euvalidator.jpg
 - name: Falco
   description: |
-    Falco 是基于 Kubernetes 的威胁检测引擎，可以在运行时根据违反安全策略的事件发出 Cloud Events。
+    Falco 是一款基于 Kubernetes 的威胁检测引擎，它可以在运行时根据违反安全策略的情形产生相应的 CloudEvents。
   url: https://falco.org
   logo: falco.png 
 - name: Google Cloud Eventarc
