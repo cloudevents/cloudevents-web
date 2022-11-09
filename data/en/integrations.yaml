@@ -35,12 +35,17 @@
   logo: debezium.png
 - name: Direktiv
   description: |
-    Direktiv, a serverless workflow engine, which can take in [cloud events](https://docs.direktiv.io/docs/events/events.html) to trigger workflows.
+    Direktiv, a serverless workflow engine, which can take in [CloudEvents](https://docs.direktiv.io/docs/events/events.html) to trigger workflows.
   url: https://direktiv.io
   logo: direktiv.png
+- name: European Commission
+  description: |
+    A CloudEvents validation service.
+  url: https://joinup.ec.europa.eu/collection/interoperability-test-bed-repository/solution/cloudeventsvalidator
+  logo: euvalidator.jpg
 - name: Falco
   description: |
-    Falco is a threat detection engine for Kubernetes that can emit cloud events for security policy violations at runtime.
+    Falco is a threat detection engine for Kubernetes that can emit CloudEvents for security policy violations at runtime.
   url: https://falco.org
   logo: falco.png
 - name: Golioth
@@ -55,7 +60,7 @@
   logo: googlecloud.png
 - name: IBM Cloud Code Engine
   description: |
-    Code Engine is a fully managed, serverless platform designed to run container images, batch jobs, or source code. Code Engine allows you to build event driven workloads that react to Cloud Events.
+    Code Engine is a fully managed, serverless platform designed to run container images, batch jobs, or source code. Code Engine allows you to build event driven workloads that react to CloudEvents.
   url: https://cloud.ibm.com/codeengine
   logo: codeengine.svg
 - name: Keptn
@@ -95,7 +100,7 @@
   logo: sw-logo.png
 - name: Tekton Pipelines
   description: |
-    Tekton is a cloud native framework for creating CI/CD systems that can emit cloud events as pipelines and tasks execute.
+    Tekton is a cloud native framework for creating CI/CD systems that can emit CloudEvents as pipelines and tasks execute.
   url: https://tekton.dev
   logo: tekton.png
 - name: Tencent Cloud EventBridge
