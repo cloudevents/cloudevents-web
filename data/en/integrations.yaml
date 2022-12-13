@@ -118,6 +118,11 @@
     VMware Event Broker Appliance (VEBA) publishes CloudEvents for changes in a vSphere cluster.
   url: https://vmweventbroker.io/
   logo: veba.png
+- name: Voxie
+  url: https://www.voxie.com
+  description: |
+    Voxie is a conversational messaging platform using SMS to help businesses engage 1:1 with their customers at scale.
+  logo: voxie.svg
 - name: wasmCloud
   url: https://wasmcloud.dev
   description: |
