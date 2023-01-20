@@ -88,6 +88,13 @@
     The Oracle Cloud Infrastructure Events service implements CloudEvents
   url: https://blogs.oracle.com/cloud-infrastructure/track-and-react-to-cloud-native-events
   logo: oracle.png
+- name: SAP
+  description: |
+    Many SAP applications publish events complying to the CloudEvents specification. A list of events can be found 
+    [here](https://api.sap.com/content-type/Events/events/events). Furthermore, [SAP Event Mesh](https://discovery-center.cloud.sap/serviceCatalog/event-mesh)
+    supports CloudEvents.
+  url: https://www.sap.com
+  logo: sap.svg
 - name: Serverless.com Event Gateway
   description: |
     All event data that functions receive from the Event Gateway is CloudEvents compliant
