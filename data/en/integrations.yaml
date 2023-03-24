@@ -58,6 +58,12 @@
     Eventarc is a managed infrastructure that allows you to build event-driven architectures with loosely coupled services that react to state changes.
   url: https://cloud.google.com/eventarc/docs/
   logo: googlecloud.png
+- name: Harbor
+  description: |
+    Harbor is an open source registry and CNCF Graduated project that secures artifacts with policies and role-based access control, 
+    ensures images are scanned and free from vulnerabilities, and signs images as trusted.
+  url: https://goharbor.io/
+  logo: harbor.png
 - name: IBM Cloud Code Engine
   description: |
     Code Engine is a fully managed, serverless platform designed to run container images, batch jobs, or source code. Code Engine allows you to build event driven workloads that react to CloudEvents.
