@@ -58,6 +58,11 @@
     Eventarc is a managed infrastructure that allows you to build event-driven architectures with loosely coupled services that react to state changes.
   url: https://cloud.google.com/eventarc/docs/
   logo: googlecloud.png
+- name: Flyte
+  description: |
+    Flyte (LF AI & Data Foundation Graduated Project) is a cloud-native workflow orchestration platform built on top of Kubernetes, providing an abstraction layer for guaranteed scalability and reproducibility of data and machine learning workflows. Progress of workflows and tasks is delimited by a series of events that Flyte can emit using CloudEvents.
+  url: https://flyte.org
+  logo: flyte.png
 - name: Harbor
   description: |
     Harbor is an open source registry and CNCF Graduated project that secures artifacts with policies and role-based access control, 
