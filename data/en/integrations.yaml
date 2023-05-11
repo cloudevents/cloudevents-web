@@ -48,6 +48,11 @@
     Falco is a threat detection engine for Kubernetes that can emit CloudEvents for security policy violations at runtime.
   url: https://falco.org
   logo: falco.png
+- name: Flyte
+  description: |
+    Flyte is a cloud-native workflow orchestration platform built on top of Kubernetes. An LF AI & Data Foundation graduated project, Flyte provides an abstraction layer for guaranteed scalability and reproducibility of data and machine learning workflows. Progress of workflows and tasks is delimited by a series of events that Flyte can emit using CloudEvents.
+  url: https://flyte.org
+  logo: flyte.png
 - name: Golioth
   url: https://golioth.io/
   logo: golioth.svg
