@@ -60,7 +60,7 @@
   logo: googlecloud.png
 - name: Flyte
   description: |
-    Flyte (LF AI & Data Foundation Graduated Project) is a cloud-native workflow orchestration platform built on top of Kubernetes, providing an abstraction layer for guaranteed scalability and reproducibility of data and machine learning workflows. Progress of workflows and tasks is delimited by a series of events that Flyte can emit using CloudEvents.
+    Flyte is a cloud-native workflow orchestration platform built on top of Kubernetes. An LF AI & Data Foundation graduated project, Flyte provides an abstraction layer for guaranteed scalability and reproducibility of data and machine learning workflows. Progress of workflows and tasks is delimited by a series of events that Flyte can emit using CloudEvents.
   url: https://flyte.org
   logo: flyte.png
 - name: Harbor
