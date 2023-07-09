@@ -1,6 +1,6 @@
 - name: Adobe I/O Events
   description: |
-    Adobe I/O Events embrace event-driven architecture to streamline workflows, improve marketing performance, and more, by allowing developers to programmatically respond to user behavior, resulting in near real-time customer experiences that are targeted, effective and personalized.
+    Adobe I/O Events embrace event-driven architecture to streamline workflows, improve marketing performance, and more, by allowing developers to programmatically respond to user behavior, resulting in near real-time customer experiences that are targeted, effective and personalized
   url: https://www.adobe.io/apis/experienceplatform/events.html
   logo: adobeioeventslogo.jpg
 - name: Alibaba Cloud EventBridge
@@ -15,7 +15,7 @@
   logo: argo-events.png
 - name: Awakari
   description: |
-    Subscription-based instant messaging. Broadcast to everyone. Receive only what is relevant. Uses CloudEvents for both publishing and receiving.
+    Subscription-based instant messaging. Broadcast to everyone. Receive only what is relevant. Uses CloudEvents for both publishing and receiving
   url: https://awakari.com
   logo: awakari.svg
 - name: Azure Event Grid
@@ -40,48 +40,48 @@
   logo: debezium.png
 - name: Direktiv
   description: |
-    Direktiv, a serverless workflow engine, which can take in [CloudEvents](https://docs.direktiv.io/docs/events/events.html) to trigger workflows.
+    Direktiv, a serverless workflow engine, which can take in [CloudEvents](https://docs.direktiv.io/docs/events/events.html) to trigger workflows
   url: https://direktiv.io
   logo: direktiv.png
 - name: European Commission
   description: |
-    A CloudEvents validation service.
+    A CloudEvents validation service
   url: https://joinup.ec.europa.eu/collection/interoperability-test-bed-repository/solution/cloudeventsvalidator
   logo: euvalidator.jpg
 - name: Falco
   description: |
-    Falco is a threat detection engine for Kubernetes that can emit CloudEvents for security policy violations at runtime.
+    Falco is a threat detection engine for Kubernetes that can emit CloudEvents for security policy violations at runtime
   url: https://falco.org
   logo: falco.png
 - name: Flyte
   description: |
-    Flyte is a cloud-native workflow orchestration platform built on top of Kubernetes. An LF AI & Data Foundation graduated project, Flyte provides an abstraction layer for guaranteed scalability and reproducibility of data and machine learning workflows. Progress of workflows and tasks is delimited by a series of events that Flyte can emit using CloudEvents.
+    Flyte is a cloud-native workflow orchestration platform built on top of Kubernetes. An LF AI & Data Foundation graduated project, Flyte provides an abstraction layer for guaranteed scalability and reproducibility of data and machine learning workflows. Progress of workflows and tasks is delimited by a series of events that Flyte can emit using CloudEvents
   url: https://flyte.org
   logo: flyte.png
 - name: Golioth
   url: https://golioth.io/
   logo: golioth.svg
   description: |
-    Golioth is an IoT device management platform that uses CloudEvents for handling events coming from IoT-specific protocol gateways to internal services. Golioth also publishes IoT data "Output Streams" as CloudEvents.
+    Golioth is an IoT device management platform that uses CloudEvents for handling events coming from IoT-specific protocol gateways to internal services. Golioth also publishes IoT data "Output Streams" as CloudEvents
 - name: Google Cloud Eventarc
   description: |
-    Eventarc is a managed infrastructure that allows you to build event-driven architectures with loosely coupled services that react to state changes.
+    Eventarc is a managed infrastructure that allows you to build event-driven architectures with loosely coupled services that react to state changes
   url: https://cloud.google.com/eventarc/docs/
   logo: googlecloud.png
 - name: Harbor
   description: |
     Harbor is an open source registry and CNCF Graduated project that secures artifacts with policies and role-based access control, 
-    ensures images are scanned and free from vulnerabilities, and signs images as trusted.
+    ensures images are scanned and free from vulnerabilities, and signs images as trusted
   url: https://goharbor.io/
   logo: harbor.png
 - name: IBM Cloud Code Engine
   description: |
-    Code Engine is a fully managed, serverless platform designed to run container images, batch jobs, or source code. Code Engine allows you to build event driven workloads that react to CloudEvents.
+    Code Engine is a fully managed, serverless platform designed to run container images, batch jobs, or source code. Code Engine allows you to build event driven workloads that react to CloudEvents
   url: https://cloud.ibm.com/codeengine
   logo: codeengine.svg
 - name: Keptn
   description: |
-    Keptn builds upon CloudEvents for continuous delivery and automated operations and has its [specification](https://github.com/keptn/spec) based on CloudEvents.
+    Keptn builds upon CloudEvents for continuous delivery and automated operations and has its [specification](https://github.com/keptn/spec) based on CloudEvents
   url: https://keptn.sh
   logo: keptn.png
 - name: Knative Eventing
@@ -94,6 +94,11 @@
     All events emitted and consumed by Kogito business automation applications are CloudEvents compliant
   url: https://kogito.kie.org/
   logo: kogito-logo.png
+- name: Kubewatch
+  description: |
+    A Kubernetes watcher that publishes notification to available collaboration hubs/notification channels
+  url: https://github.com/robusta-dev/kubewatch
+  logo: kubewatch-logo.jpeg
 - name: OpenFaaS
   description: |
     CloudEvent events are one of the many available triggers for OpenFaaS functions
@@ -108,7 +113,7 @@
   description: |
     Many SAP applications publish events complying to the CloudEvents specification. A list of events can be found 
     [here](https://api.sap.com/content-type/Events/events/events). Furthermore, [SAP Event Mesh](https://discovery-center.cloud.sap/serviceCatalog/event-mesh)
-    supports CloudEvents.
+    supports CloudEvents
   url: https://www.sap.com
   logo: sap.svg
 - name: Serverless.com Event Gateway
@@ -123,31 +128,31 @@
   logo: sw-logo.png
 - name: Tekton Pipelines
   description: |
-    Tekton is a cloud native framework for creating CI/CD systems that can emit CloudEvents as pipelines and tasks execute.
+    Tekton is a cloud native framework for creating CI/CD systems that can emit CloudEvents as pipelines and tasks execute
   url: https://tekton.dev
   logo: tekton.png
 - name: Tencent Cloud EventBridge
   description: |
-    EventBridge is a secure, stable, and efficient serverless event management platform that supports Tencent Cloud services, custom applications, and SaaS applications are connected in a standardized and centralized manner.
+    EventBridge is a secure, stable, and efficient serverless event management platform that supports Tencent Cloud services, custom applications, and SaaS applications are connected in a standardized and centralized manner
   url: https://cloud.tencent.com/product/eb
   logo: tencentcloud-eventbridge.svg
 - name: TriggerMesh
   description: |
-    TriggerMesh makes use of CloudEvents in all its event sources and targets to build application flows.
+    TriggerMesh makes use of CloudEvents in all its event sources and targets to build application flows
   url: https://www.triggermesh.com
   logo: triggermesh.png
 - name: VMware Event Broker Appliance
   description: |
-    VMware Event Broker Appliance (VEBA) publishes CloudEvents for changes in a vSphere cluster.
+    VMware Event Broker Appliance (VEBA) publishes CloudEvents for changes in a vSphere cluster
   url: https://vmweventbroker.io/
   logo: veba.png
 - name: Voxie
   url: https://www.voxie.com
   description: |
-    Voxie is a conversational messaging platform using SMS to help businesses engage 1:1 with their customers at scale.
+    Voxie is a conversational messaging platform using SMS to help businesses engage 1:1 with their customers at scale
   logo: voxie.svg
 - name: wasmCloud
   url: https://wasmcloud.dev
   description: |
-    wasmCloud, a cloud native WebAssembly host runtime (CNCF), uses CloudEvents for all event publication and monitoring on its control interface.
+    wasmCloud, a cloud native WebAssembly host runtime (CNCF), uses CloudEvents for all event publication and monitoring on its control interface
   logo: wasmcloud.png
