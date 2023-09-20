@@ -18,7 +18,7 @@ what:
 CloudEvents is a [specification](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md) for describing event data in a common way. CloudEvents seeks to dramatically simplify event declaration and delivery across services, platforms, and beyond!
 
 
-CloudEvents is a new effort and it's still under active development. However, its working group has received a surprising amount of industry interest, ranging from major cloud providers to popular SaaS companies. The specification is now under the [Cloud Native Computing Foundation](https://cncf.io).
+The CloudEvents working group has received a large amount of industry interest, ranging from major cloud providers to popular SaaS companies. The specification is now under the [Cloud Native Computing Foundation](https://cncf.io).
 "
 contribute:
   title: "Contribute to the CloudEvents project"
