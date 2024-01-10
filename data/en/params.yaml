@@ -24,6 +24,9 @@ contribute:
   title: "Contribute to the CloudEvents project"
   text: "CloudEvents is organized via the CNCF's [Serverless Working Group](https://github.com/cncf/wg-serverless) and everyone is encouraged to join us. If you're interested in contributing, please collaborate with us in the [CloudEvents Github org](https://github.com/cloudevents), join our weekly call every Thursday at [9AM PT](https://www.thetimezoneconverter.com/?t=9:00am&tz=San%20Francisco) via [Zoom](https://zoom.us/my/cncfserverlesswg), check the [meeting notes](https://docs.google.com/document/d/1OVF68rpuPK5shIHILK9JOqlZBbfe91RNzQ7u_P7YCDE), and review our [Governance](https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md) model to familiarize yourself with our process."
 releases:
+  - title: "CloudEvents has Graduated!"
+    text: "On January 10, 2024 CloudEvents was approved as a 'Graduated' project in the CNCF. Thank you to everyone who helped build the CloudEvents project (specifications and SDKs) into what it is today. We couldn't have done it without each and every one of you!
+"
   - title: "CloudEvents 1.0.2 release"
     text: "On February 5, 2022 the CloudEvents project released v1.0.2 of its specifications. Aside from minor clarifications to the specifications, there were a few noteworthy additions made to the set of deliverables:
 
