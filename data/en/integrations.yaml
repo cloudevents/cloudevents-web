@@ -112,7 +112,7 @@
 - name: SAP
   description: |
     Many SAP applications publish events complying to the CloudEvents specification. A list of events can be found 
-    [here](https://api.sap.com/content-type/Events/events/events). Furthermore, [SAP Event Mesh](https://discovery-center.cloud.sap/serviceCatalog/event-mesh)
+    [here](https://hub.sap.com/content-type/Events/events/events). Furthermore, [SAP Event Mesh](https://discovery-center.cloud.sap/serviceCatalog/event-mesh)
     supports CloudEvents
   url: https://www.sap.com
   logo: sap.svg
