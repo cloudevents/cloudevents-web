@@ -116,9 +116,7 @@
   logo: oracle.png
 - name: SAP
   description: |
-    Many SAP applications publish events complying to the CloudEvents specification. A list of events can be found 
-    [here](https://hub.sap.com/content-type/Events/events/events). Furthermore, [SAP Event Mesh](https://discovery-center.cloud.sap/serviceCatalog/event-mesh)
-    supports CloudEvents
+    Many SAP applications publish events complying with the CloudEvents specification. A list of events can be found in the [SAP Business Accelerator Hub](https://hub.sap.com/content-type/Events/events/events). Furthermore, many SAP products support CloudEvents and you can find the details [here](https://community.sap.com/t5/application-development-blog-posts/cloudevents-at-sap/ba-p/13620137).
   url: https://www.sap.com
   logo: sap.svg
 - name: Serverless.com Event Gateway
