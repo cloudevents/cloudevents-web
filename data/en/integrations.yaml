@@ -33,6 +33,11 @@
     All Life Cycle and Autonomous Agent events emitted by the Choria orchestration system are CloudEvents compliant
   url: https://choria.io/blog/post/2019/12/05/cloudevents_transition
   logo: choria.png
+- name: Cloud Streams
+  description: |
+    Cloud Streams is a powerful cloud-native solution that captures, processes, and routes real-time events at scale, creating flexible and fault-tolerant event-driven architectures. With robust filtering, mutation, and retry capabilities, plus effortless integration into existing systems, Cloud Streams empowers businesses to optimize data processing and reduce complexity.
+  url: https://github.com/neuroglia-io/cloud-streams
+  logo: cloud-streams.png
 - name: commercetools
   description: |
     All services of the commercetools platform can emit CloudEvents compliant events
@@ -129,6 +134,11 @@
     All event definitions in the Serverless Workflow JSON/YAML model are CloudEvents compliant
   url: https://serverlessworkflow.io
   logo: sw-logo.png
+- name: Synapse
+  description: |
+    Synapse is a vendor-neutral, open-source Workflow Management System that empowers businesses to orchestrate serverless workflows with ease, thanks to its intuitive DSL and seamless event-driven design.
+  url: https://github.com/serverlessworkflow/synapse
+  logo: synapse.png
 - name: Tekton Pipelines
   description: |
     Tekton is a cloud native framework for creating CI/CD systems that can emit CloudEvents as pipelines and tasks execute
