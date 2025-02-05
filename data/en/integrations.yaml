@@ -133,7 +133,7 @@
   description: |
     All event definitions in the Serverless Workflow JSON/YAML model are CloudEvents compliant
   url: https://serverlessworkflow.io
-  logo: sw-logo.png
+  logo: serverless-workflow.png
 - name: Synapse
   description: |
     Synapse is a vendor-neutral, open-source Workflow Management System that empowers businesses to orchestrate serverless workflows with ease, thanks to its intuitive DSL and seamless event-driven design.
