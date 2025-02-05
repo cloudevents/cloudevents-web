@@ -128,7 +128,7 @@
   description: |
     All event definitions in the Serverless Workflow JSON/YAML model are CloudEvents compliant
   url: https://serverlessworkflow.io
-  logo: sw-logo.png
+  logo: serverless-workflow.png
 - name: Tekton Pipelines
   description: |
     Tekton is a cloud native framework for creating CI/CD systems that can emit CloudEvents as pipelines and tasks execute
