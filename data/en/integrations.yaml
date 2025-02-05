@@ -35,7 +35,7 @@
   logo: choria.png
 - name: Cloud Streams
   description: |
-    Cloud Streams is a powerful cloud-native solution that captures, processes, and routes real-time events at scale, creating flexible and fault-tolerant event-driven architectures. With robust filtering, mutation, and retry capabilities, plus effortless integration into existing systems, Cloud Streams empowers businesses to optimize data processing and reduce complexity.
+    Cloud Streams is a powerful cloud-native solution that captures, processes, and routes real-time events at scale, creating flexible and fault-tolerant event-driven architectures.
   url: https://github.com/neuroglia-io/cloud-streams
   logo: cloud-streams.png
 - name: commercetools
