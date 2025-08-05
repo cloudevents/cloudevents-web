@@ -157,12 +157,12 @@
 - name: TriggerMesh
   description: |
     TriggerMesh makes use of CloudEvents in all its event sources and targets to build application flows
-  url: https://www.triggermesh.com
+  url: https://github.com/triggermesh/triggermesh
   logo: triggermesh.png
 - name: VMware Event Broker Appliance
   description: |
     VMware Event Broker Appliance (VEBA) publishes CloudEvents for changes in a vSphere cluster
-  url: https://vmweventbroker.io/
+  url: https://github.com/vmware-archive/vcenter-event-broker-appliance
   logo: veba.png
 - name: Voxie
   url: https://www.voxie.com
