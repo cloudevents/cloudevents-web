@@ -106,12 +106,12 @@
 - name: TriggerMesh
   description: |
     TriggerMesh 在其所有事件源和目标中使用 CloudEvents 来构建应用程序流。
-  url: https://www.triggermesh.com
+  url: https://github.com/triggermesh/triggermesh
   logo: triggermesh.png
 - name: VMware Event Broker Appliance
   description: |
     VMware Event Broker Appliance (VEBA) 针对 vSphere 集群中的更改发布 CloudEvents。
-  url: https://vmweventbroker.io/
+  url: https://github.com/vmware-archive/vcenter-event-broker-appliance
   logo: veba.png
 - name: wasmCloud
   url: https://wasmcloud.dev
